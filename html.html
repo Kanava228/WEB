@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>HTML</title>
-	<link rel="stylesheet" href="./html.css">
+	<link rel="stylesheet" href="./css/html.css">
 </head>
+
 <body>
 	<h2>&lt;a&gt;</h2>
 	<ol>
@@ -70,8 +72,40 @@
 		</li>
 	</ol>
 	<h2>&lt;abbr&gt;</h2>
-	<span>&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;</span> - обозначает текст как аббревиатура и добавляет подсказку при наведении
+	<span>&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;</span> - обозначает текст как аббревиатура и
+	добавляет подсказку при наведении
 	<h4>Результат:</h4>
-			<p><abbr title="HyperText Markup Language">HTML</abbr></p>
+	<p><abbr title="HyperText Markup Language">HTML</abbr></p>
+<h2>&lt;article&gt;</h2>
+<span>&lt;article&gt; - задает содержание сайта вроде новости, статьи, записи блога, форума или др., нужен для симантики <br>.... <br>&lt;/article&gt;</span>
+<h2>&lt;aside&gt;</h2>
+<span>&lt;aside&gt; - определяет блок сбоку от контента для размещения рубрик, ссылок на архив, меток и другой информации<br>.... <br>
+	&lt;/aside&gt;</span>
+	<h2>&lt;audio&gt;</h2>
+	<ol>
+		<li>
+			<span>&lt;audio <b>controls src=""</b> &gt;&lt;/audio&gt; - добавляет, воспроизводит и управляет настройками аудиозаписи на веб-странице. controls позваляет управлять воспроизводением трека</span>
+			<h4>Результат:</h4>
+			<audio controls src="vodica.mp3">Ваш браузер не поддерживает этот тег или этот формат</audio>
+		</li>
+		<li>
+			<span>&lt;audio <b>autoplay </b>controls src="" &gt;&lt;/audio&gt;</span> - аудио начинает воспроизводиться автоматически после загрузки страницы
+			<h4>Результат:</h4>
+			<p>Примера не будет</p>
+			<p></p>
+		</li>
+		<li>
+			<span>&lt;audio <b> loop</b> src=""&gt;&lt;/audio&gt;</span> - повторяет воспроизведение звука с начала после его завершения
+			<h4>Результат:</h4>
+			<p><audio controls loop src="vodica.mp3"></audio></p>
+		</li>
+		<li>
+			<span>&lt;audio <b> preload="auto"</b> src=""&gt;&lt;/audio&gt;</span> - используется для загрузки аудиофайла вместе с загрузкой веб-страницы
+			<h4>Результат:</h4>
+			<p><audio controls preload="auto" src="vodica.mp3"></audio></p>
+		</li>
+	</ol>
+	<audio preload="auto" src=""></audio>
 </body>
+
 </html>
