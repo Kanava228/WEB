@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +7,18 @@
 	<title>HTML</title>
 	<link rel="stylesheet" href="./css/html.css">
 </head>
-
 <body>
-	<h2>&lt;a&gt;</h2>
+	<b> <big>
+	<details open>
+		<ul>
+			<li><a href="#a">a</a></li>
+			<li><a href="#b">b</a></li>
+			<li><a href="#c">c</a></li>
+			<li><a href="#d">d</a></li>
+			<li><a href="#e">e</a></li>
+		</ul>
+</details></big></b>
+	<h2 id="a">&lt;a&gt;</h2>
 	<ol>
 		<li>
 			<span>&lt;a <b>href</b>="https://kanava228.github.io/putinhuylo/"&gt;Текст&lt;/a&gt;</span> - при нажатии на Текст
@@ -104,7 +112,7 @@
 			<audio preload="auto" controls src="vodica.mp3">Ваш браузер не поддерживает этот тег или этот формат</audio>
 		</li>
 	</ol>
-	<h2>&lt;b&gt;</h2>
+	<h2 id="b">&lt;b&gt;</h2>
 	<span>&lt;b&gt;Текст&lt;/b&gt;</span> - делает текст жирным внутри тега
 	<h4>Результат:</h4>
 	<b>Текст</b>
@@ -124,6 +132,40 @@
 <span>&lt;button&gt;Текст&lt;/button&gt;</span> - создаёт кнопку
 <h4>Результат:</h4>
 <button>Текст</button>
+<h2 id="c">&lt;canvas&gt;</h2>
+<span>&lt;canvas&gt;...&lt;/canvas&gt;</span> - с помощью JS можно рисовать фигуры, картинки и создавать игры<br>
+Результата не будет
+<h2 id="d">&lt;dl&gt;</h2>
+<span>&lt;dl&gt; <br>&nbsp; &lt;dt&gt;Текст&lt;/dt&gt; <br>&nbsp;&nbsp;&nbsp; &lt;dd&gt;очочочочочочоочоччочочоч много текста&lt;/dd&gt; <br>&lt;/dl&gt;</span> - нужно для терминов, в dt записывают термин, а в dd его значение
+<h4>Результат:</h4>
+<dl>
+	<dt>Текст</dt>
+	<dd>очочочочочочоочоччочочоч много текста</dd>
+</dl>
+<h2>&lt;del&gt;</h2>
+<span>&lt;del&gt;Текст&lt;/del&gt;</span> - нужен для отображения текста, который удалили в обновлении 
+<h4>Результат:</h4>
+<del>Текст</del>
+<h2>&lt;details&gt;</h2>
+<span>&lt;details&gt;очочочочочочоочоччочочоч много текста&lt;/details&gt;</span> - позволяет скрыть или открыть сведения
+<h4>Результат:</h4>
+<details>очочочочочочоочоччочочоч много текста</details>
+<span>&lt;details<b> open</b>&gt;очочочочочочоочоччочочоч много текста&lt;/details&gt;</span> - при загрузке сайта сведения уже открыты
+<h4>Результат:</h4>
+<details open>очочочочочочоочоччочочоч много текста</details>
+<h2>&lt;div&gt;</h2>
+<span>&lt;div&gt;<br> ... <br>&lt;/div&gt;</span> - используется для группировки элементов
+<h2 id="e">&lt;em&gt;</h2>
+<span>&lt;em&gt;Текст&lt;/em&gt;</span> - выделяет текст, на который нужно обратить внимание курсивом
+<h4>Результат:</h4>
+<em>Текст</em>
+<h2>&lt;embed&gt;</h2>
+<span>&lt;embed src=""&gt;</span> - используется для загрузки и отображения объектов
+<br>
+<embed src="https://youtu.be/TTAbXRL7w0E" type="">
+<!-- <div>
+	caption, col, colgroup, datalist, 
+</div> -->
 </body>
 
 </html>
