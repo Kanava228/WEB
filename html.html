@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,20 @@
 	<title>HTML</title>
 	<link rel="stylesheet" href="./css/html.css">
 </head>
+
 <body>
 	<b> <big>
-	<details open>
-		<ul>
-			<li><a href="#a">a</a></li>
-			<li><a href="#b">b</a></li>
-			<li><a href="#c">c</a></li>
-			<li><a href="#d">d</a></li>
-			<li><a href="#e">e</a></li>
-		</ul>
-</details></big></b>
+			<details open>
+				<ul>
+					<li><a href="#a">a</a></li>
+					<li><a href="#b">b</a></li>
+					<li><a href="#c">c</a></li>
+					<li><a href="#d">d</a></li>
+					<li><a href="#e">e</a></li>
+					<li><a href="#f">f</a></li>
+				</ul>
+			</details>
+		</big></b>
 	<h2 id="a">&lt;a&gt;</h2>
 	<ol>
 		<li>
@@ -83,31 +87,37 @@
 	добавляет подсказку при наведении
 	<h4>Результат:</h4>
 	<p><abbr title="HyperText Markup Language">HTML</abbr></p>
-<h2>&lt;article&gt;</h2>
-<span>&lt;article&gt;</span> - задает содержание сайта вроде новости, статьи, записи блога, форума или др., нужен для симантики <br>.... <br><span>&lt;/article&gt;</span>
-<h2>&lt;aside&gt;</h2>
-<span>&lt;aside&gt;</span> - определяет блок сбоку от контента для размещения рубрик, ссылок на архив, меток и другой информации<br>.... <br>
-<span>&lt;/aside&gt;</span>
+	<h2>&lt;article&gt;</h2>
+	<span>&lt;article&gt;</span> - задает содержание сайта вроде новости, статьи, записи блога, форума или др., нужен для
+	симантики <br>.... <br><span>&lt;/article&gt;</span>
+	<h2>&lt;aside&gt;</h2>
+	<span>&lt;aside&gt;</span> - определяет блок сбоку от контента для размещения рубрик, ссылок на архив, меток и другой
+	информации<br>.... <br>
+	<span>&lt;/aside&gt;</span>
 	<h2>&lt;audio&gt;</h2>
 	<ol>
 		<li>
-			<span>&lt;audio <b>controls src=""</b> &gt;&lt;/audio&gt;</span> - добавляет, воспроизводит и управляет настройками аудиозаписи на веб-странице. controls позваляет управлять воспроизводением трека
+			<span>&lt;audio <b>controls src=""</b> &gt;&lt;/audio&gt;</span> - добавляет, воспроизводит и управляет
+			настройками аудиозаписи на веб-странице. controls позваляет управлять воспроизводением трека
 			<h4>Результат:</h4>
 			<audio controls src="vodica.mp3">Ваш браузер не поддерживает этот тег или этот формат</audio>
 		</li>
 		<li>
-			<span>&lt;audio <b>autoplay </b>controls src="" &gt;&lt;/audio&gt;</span> - аудио начинает воспроизводиться автоматически после загрузки страницы
+			<span>&lt;audio <b>autoplay </b>controls src="" &gt;&lt;/audio&gt;</span> - аудио начинает воспроизводиться
+			автоматически после загрузки страницы
 			<h4>Результат:</h4>
 			<p>Примера не будет</p>
 			<p></p>
 		</li>
 		<li>
-			<span>&lt;audio <b> loop</b> src=""&gt;&lt;/audio&gt;</span> - повторяет воспроизведение звука с начала после его завершения
+			<span>&lt;audio <b> loop</b> src=""&gt;&lt;/audio&gt;</span> - повторяет воспроизведение звука с начала после его
+			завершения
 			<h4>Результат:</h4>
 			<p><audio controls loop src="vodica.mp3">Ваш браузер не поддерживает этот тег или этот формат</audio></p>
 		</li>
 		<li>
-			<span>&lt;audio <b> preload="auto"</b> src=""&gt;&lt;/audio&gt;</span> - используется для загрузки аудиофайла вместе с загрузкой веб-страницы
+			<span>&lt;audio <b> preload="auto"</b> src=""&gt;&lt;/audio&gt;</span> - используется для загрузки аудиофайла
+			вместе с загрузкой веб-страницы
 			<h4>Результат:</h4>
 			<audio preload="auto" controls src="vodica.mp3">Ваш браузер не поддерживает этот тег или этот формат</audio>
 		</li>
@@ -118,54 +128,167 @@
 	<b>Текст</b>
 	<h2>&lt;blockquote&gt;</h2>
 	<span>&lt;blockquote&gt;Текст&lt;/blockquote&gt;</span> - для выделения длинных цитат внутри документа
-<h4>Результат:</h4>
+	<h4>Результат:</h4>
 	<blockquote>Текст</blockquote>
 	<h2>&lt;big&gt;</h2>
 	<span>&lt;big&gt;Текст&lt;/big&gt;</span> - увеличивает текст
 	<h4>Результат:</h4>
 	Текст <big>Текст</big>
-<h2>&lt;br&gt;</h2>
-<span>Текст&lt;br&gt;Текст</span> - делает перенос строки
-<h4>Результат:</h4>
-<p>Текст <br> Текст</p>
-<h2>&lt;button&gt;</h2>
-<span>&lt;button&gt;Текст&lt;/button&gt;</span> - создаёт кнопку
-<h4>Результат:</h4>
-<button>Текст</button>
-<h2 id="c">&lt;canvas&gt;</h2>
-<span>&lt;canvas&gt;...&lt;/canvas&gt;</span> - с помощью JS можно рисовать фигуры, картинки и создавать игры<br>
-Результата не будет
-<h2 id="d">&lt;dl&gt;</h2>
-<span>&lt;dl&gt; <br>&nbsp; &lt;dt&gt;Текст&lt;/dt&gt; <br>&nbsp;&nbsp;&nbsp; &lt;dd&gt;очочочочочочоочоччочочоч много текста&lt;/dd&gt; <br>&lt;/dl&gt;</span> - нужно для терминов, в dt записывают термин, а в dd его значение
-<h4>Результат:</h4>
-<dl>
-	<dt>Текст</dt>
-	<dd>очочочочочочоочоччочочоч много текста</dd>
-</dl>
-<h2>&lt;del&gt;</h2>
-<span>&lt;del&gt;Текст&lt;/del&gt;</span> - нужен для отображения текста, который удалили в обновлении 
-<h4>Результат:</h4>
-<del>Текст</del>
-<h2>&lt;details&gt;</h2>
-<span>&lt;details&gt;очочочочочочоочоччочочоч много текста&lt;/details&gt;</span> - позволяет скрыть или открыть сведения
-<h4>Результат:</h4>
-<details>очочочочочочоочоччочочоч много текста</details>
-<span>&lt;details<b> open</b>&gt;очочочочочочоочоччочочоч много текста&lt;/details&gt;</span> - при загрузке сайта сведения уже открыты
-<h4>Результат:</h4>
-<details open>очочочочочочоочоччочочоч много текста</details>
-<h2>&lt;div&gt;</h2>
-<span>&lt;div&gt;<br> ... <br>&lt;/div&gt;</span> - используется для группировки элементов
-<h2 id="e">&lt;em&gt;</h2>
-<span>&lt;em&gt;Текст&lt;/em&gt;</span> - выделяет текст, на который нужно обратить внимание курсивом
-<h4>Результат:</h4>
-<em>Текст</em>
-<h2>&lt;embed&gt;</h2>
-<span>&lt;embed src=""&gt;</span> - используется для загрузки и отображения объектов
-<br>
-<embed width="400px" height="300px" src="https://www.youtube.com/embed/TTAbXRL7w0E" type="">
-
-<!-- <div>
-	caption, col, colgroup, datalist, 
+	<h2>&lt;br&gt;</h2>
+	<span>Текст&lt;br&gt;Текст</span> - делает перенос строки
+	<h4>Результат:</h4>
+	<p>Текст <br> Текст</p>
+	<h2>&lt;button&gt;</h2>
+	<span>&lt;button&gt;Текст&lt;/button&gt;</span> - создаёт кнопку
+	<h4>Результат:</h4>
+	<button>Текст</button>
+	<h2 id="c">&lt;canvas&gt;</h2>
+	<span>&lt;canvas&gt;...&lt;/canvas&gt;</span> - с помощью JS можно рисовать фигуры, картинки и создавать игры<br>
+	Результата не будет
+	<h2 id="d">&lt;dl&gt;</h2>
+	<span>&lt;dl&gt; <br>&nbsp; &lt;dt&gt;Текст&lt;/dt&gt; <br>&nbsp;&nbsp;&nbsp; &lt;dd&gt;очочочочочочоочоччочочоч много
+		текста&lt;/dd&gt; <br>&lt;/dl&gt;</span> - нужно для терминов, в dt записывают термин, а в dd его значение
+	<h4>Результат:</h4>
+	<dl>
+		<dt>Текст</dt>
+		<dd>очочочочочочоочоччочочоч много текста</dd>
+	</dl>
+	<h2>&lt;del&gt;</h2>
+	<span>&lt;del&gt;Текст&lt;/del&gt;</span> - нужен для отображения текста, который удалили в обновлении
+	<h4>Результат:</h4>
+	<del>Текст</del>
+	<h2>&lt;details&gt;</h2>
+	<span>&lt;details&gt;очочочочочочоочоччочочоч много текста&lt;/details&gt;</span> - позволяет скрыть или открыть
+	сведения
+	<h4>Результат:</h4>
+	<details>очочочочочочоочоччочочоч много текста</details>
+	<span>&lt;details<b> open</b>&gt;очочочочочочоочоччочочоч много текста&lt;/details&gt;</span> - при загрузке сайта
+	сведения уже открыты
+	<h4>Результат:</h4>
+	<details open>очочочочочочоочоччочочоч много текста</details>
+	<h2>&lt;div&gt;</h2>
+	<span>&lt;div&gt;<br> ... <br>&lt;/div&gt;</span> - используется для группировки элементов
+	<h2 id="e">&lt;em&gt;</h2>
+	<span>&lt;em&gt;Текст&lt;/em&gt;</span> - выделяет текст, на который нужно обратить внимание курсивом
+	<h4>Результат:</h4>
+	<em>Текст</em>
+	<h2>&lt;embed&gt;</h2>
+	<span>&lt;embed src=""&gt;</span> - используется для загрузки и отображения объектов
+	<h4>Результат:</h4>
+	<br>
+	<embed width="400px" height="300px" src="https://www.youtube.com/embed/TTAbXRL7w0E" type="">
+	<h2 id="f">&lt;figure&gt;</h2>
+	<span>&lt;figure&gt;...&lt;/figure&gt;</span> - для группирования любых элементов, в основном картинка и подпись к ней
+	<br><br><span>&lt;figure&gt;
+		<br> <b>&lt;figcaption&gt;Текст&lt;/figcaption&gt;</b></span> - описание к figure <br>
+	<span>&lt;/figure&gt;</span>
+	<h2>&lt;form&gt;</h2>
+	<span>&lt;form action=""&gt;...&lt;/form&gt;</span> - создаёт форму на странице, action - путь к файлу, который
+	обрабатывает данные<br>
+	<span>&lt;form <b>autocomplete="on"</b>&gt;&lt;/form&gt;</span> - добавляет возможность автоматически заполнить форму,
+	то есть данные, которые когда-то вводились в поле
+	<form action="">
+		<h3>&lt;fieldset&gt;</h3>
+		<span>&lt;fieldset&gt;...&lt;/fieldset&gt;</span> - объединение полей
+		<h4>Результат:</h4>
+		<fieldset>
+		<br>
+		<legend><h3>&lt;input&gt;</h3></legend>
+		<span>&lt;form action=""&gt;&lt;input type="text"&gt;&lt;/form&gt;</span> - создаёт поле для ввода информации в
+		форму<br>
+		<span>&lt;input <b>autocomplete="on"</b> &gt;</span> - включает автозаполнение
+		<h4>Результат:</h4>
+		<input autocomplete="on" type="text"> <br><br>
+		<span>&lt;input <b> autofocus</b>&gt;</span> - можно вводить данные без нажатия на поле, курсор устанавливается на
+		поле
+		<h4>Результат:</h4>
+		Результата не будет из-за перехода сразу на этот тег при загрузке страницы <br><br>
+		<span>&lt;input <b>placeholder="Текст"</b>&gt;</span> - делает подсказку на поле
+		<h4>Результат:</h4>
+		<input placeholder="Текст" type="text"> <br><br>
+		<span>&lt;input <b>required</b> &gt;</span> - обязательное поле
+		<h4>Результат:</h4>
+		<input required type="text"><br><br>
+		<span>&lt;input <b>value="Текст"</b>&gt;</span> - текст уже буден набран в поле, также используется для текста
+		кнопки
+		<h4>Результат:</h4>
+		<input value="Текст" type="text"><br><br>
+		<span>&lt;input <b>readonly</b> &gt;</span> - нельзя изменить, только прочесть
+		<h4>Результат:</h4>
+		<input value="Текст" readonly type="text"><br><br>
+		<span>&lt;input <b>type="button"</b>&gt;</span> - для кнопки
+		<h4>Результат:</h4>
+		<input type="button" value="Текст"><br><br>
+		<span>&lt;input <b>type="checkbox"</b>&gt;</span> - устанавливает чекбокс
+		<h4>Результат:</h4>
+		<input type="checkbox"> Текст<br><br>
+		<span>&lt;input <b>type="file"</b>&gt;</span> - в качестве поля требует файл
+		<h4>Результат:</h4>
+		<input type="file"><br><br>
+		<span>&lt;input <b>type="image"</b> &gt;</span> - в качестве кнопки для отправки использует картинку
+		<h4>Результат:</h4>
+		<input width="100px" type="image" src="./kot.jpg"><br><br>
+		<span>&lt;input <b>type="password"</b> &gt;</span> - используется для паролей
+		<h4>Результат:</h4>
+		<input type="password"><br><br>
+		<span>&lt;input <b>type="radio"</b>&gt;</span> - для выбора из элементов
+		<h4>Результат:</h4>
+		<input type="radio"> Текст<br><br>
+		<span>&lt;input <b>type="reset"</b>&gt;</span> - сброс формы
+		<h4>Результат:</h4>
+		<input type="reset"><br><br>
+		<span>&lt;input <b>type="sumbit"</b>&gt;</span> - для отправки формы
+		<h4>Результат:</h4>
+		<input type="submit"><br><br>
+		<span>&lt;input <b>type="text"</b>&gt;</span> - для ввода любого текста
+		<h4>Результат:</h4>
+		<input type="text"><br><br>
+		<span>&lt;input <b>type="color"</b> &gt;</span> - для выбора цвета
+		<h4>Результат:</h4>
+		<input type="color"><br><br>
+		<span>&lt;input <b>type="date"</b>&gt;</span> - для выбора даты
+		<h4>Результат:</h4>
+		<input type="date"><br><br>
+		<span>&lt;input <b>type="datetime-local"</b>&gt;</span> - для выбора даты и времени
+		<h4>Результат:</h4>
+		<input type="datetime-local"><br><br>
+		<span>&lt;input <b>type="email"</b>&gt;</span> - для почты
+		<h4>Результат:</h4>
+		<input type="email"><br><br>
+		<span>&lt;input <b>type="number"</b>&gt;</span> - для чисел
+		<h4>Результат:</h4>
+		<input type="number"><br><br>
+		<span>&lt;input <b>type="range" min="1" max="10" step="1"</b>&gt;</span> - для выбора чисел от, до и какому кратное
+		<h4>Результат:</h4>
+		<input type="range" min="1" max="10" step="1"><br><br>
+		<span>&lt;input <b>type="search"</b>&gt;</span> - для поиска
+		<h4>Результат:</h4>
+		<input type="search"><br><br>
+		<span>&lt;input <b>type="tel"</b>&gt;</span> - для номера телефона
+		<h4>Результат:</h4>
+		<input type="tel"><br><br>
+		<span>&lt;input <b>type="time"</b>&gt;</span> - для времени
+		<h4>Результат:</h4>
+		<input type="time"><br><br>
+		<span>&lt;input <b>type="url"</b>&gt;</span> - для ссылок
+		<h4>Результат:</h4>
+		<input type="url"><br><br>
+		<span>&lt;input <b>type="month"</b>&gt;</span> - для месяца
+		<h4>Результат:</h4>
+		<input type="month"><br><br>
+		<span>&lt;input <b>type="week"</b>&gt;</span> - для недели
+		<h4>Результат:</h4>
+		<input type="week"><br><br>
+		<span>&lt;input type="text" <b> list="k"&gt;&lt;datalist id="k"&gt;&lt;option value="Текст"&gt;&lt;/option&gt;&lt;/datalist&gt;</b></span> - позволяет выбрать из списка
+		<h4>Результат:</h4>
+		<input type="text" list="k"><datalist id="k"><option value="Текст"></option></datalist>
+	</fieldset>
+	</form>
+	<h2>&lt;footer&gt;</h2>
+	<span>&lt;footer&gt;...&lt;/footer&gt;</span> - используется для разметки и группировки элементов в самом конце сайта, не обязательный
+	<h2></h2>
+	<!-- <div>
+	caption, col, colgroup, 
 </div> -->
 </body>
 
