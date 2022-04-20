@@ -19,6 +19,7 @@
 					<li><a href="#d">d</a></li>
 					<li><a href="#e">e</a></li>
 					<li><a href="#f">f</a></li>
+					<li><a href="#h"></a></li>
 				</ul>
 			</details>
 		</big></b>
@@ -192,101 +193,123 @@
 		<span>&lt;fieldset&gt;...&lt;/fieldset&gt;</span> - объединение полей
 		<h4>Результат:</h4>
 		<fieldset>
-		<br>
-		<legend><h3>&lt;input&gt;</h3></legend>
-		<span>&lt;form action=""&gt;&lt;input type="text"&gt;&lt;/form&gt;</span> - создаёт поле для ввода информации в
-		форму<br>
-		<span>&lt;input <b>autocomplete="on"</b> &gt;</span> - включает автозаполнение
-		<h4>Результат:</h4>
-		<input autocomplete="on" type="text"> <br><br>
-		<span>&lt;input <b> autofocus</b>&gt;</span> - можно вводить данные без нажатия на поле, курсор устанавливается на
-		поле
-		<h4>Результат:</h4>
-		Результата не будет из-за перехода сразу на этот тег при загрузке страницы <br><br>
-		<span>&lt;input <b>placeholder="Текст"</b>&gt;</span> - делает подсказку на поле
-		<h4>Результат:</h4>
-		<input placeholder="Текст" type="text"> <br><br>
-		<span>&lt;input <b>required</b> &gt;</span> - обязательное поле
-		<h4>Результат:</h4>
-		<input required type="text"><br><br>
-		<span>&lt;input <b>value="Текст"</b>&gt;</span> - текст уже буден набран в поле, также используется для текста
-		кнопки
-		<h4>Результат:</h4>
-		<input value="Текст" type="text"><br><br>
-		<span>&lt;input <b>readonly</b> &gt;</span> - нельзя изменить, только прочесть
-		<h4>Результат:</h4>
-		<input value="Текст" readonly type="text"><br><br>
-		<span>&lt;input <b>type="button"</b>&gt;</span> - для кнопки
-		<h4>Результат:</h4>
-		<input type="button" value="Текст"><br><br>
-		<span>&lt;input <b>type="checkbox"</b>&gt;</span> - устанавливает чекбокс
-		<h4>Результат:</h4>
-		<input type="checkbox"> Текст<br><br>
-		<span>&lt;input <b>type="file"</b>&gt;</span> - в качестве поля требует файл
-		<h4>Результат:</h4>
-		<input type="file"><br><br>
-		<span>&lt;input <b>type="image"</b> &gt;</span> - в качестве кнопки для отправки использует картинку
-		<h4>Результат:</h4>
-		<input width="100px" type="image" src="./kot.jpg"><br><br>
-		<span>&lt;input <b>type="password"</b> &gt;</span> - используется для паролей
-		<h4>Результат:</h4>
-		<input type="password"><br><br>
-		<span>&lt;input <b>type="radio"</b>&gt;</span> - для выбора из элементов
-		<h4>Результат:</h4>
-		<input type="radio"> Текст<br><br>
-		<span>&lt;input <b>type="reset"</b>&gt;</span> - сброс формы
-		<h4>Результат:</h4>
-		<input type="reset"><br><br>
-		<span>&lt;input <b>type="sumbit"</b>&gt;</span> - для отправки формы
-		<h4>Результат:</h4>
-		<input type="submit"><br><br>
-		<span>&lt;input <b>type="text"</b>&gt;</span> - для ввода любого текста
-		<h4>Результат:</h4>
-		<input type="text"><br><br>
-		<span>&lt;input <b>type="color"</b> &gt;</span> - для выбора цвета
-		<h4>Результат:</h4>
-		<input type="color"><br><br>
-		<span>&lt;input <b>type="date"</b>&gt;</span> - для выбора даты
-		<h4>Результат:</h4>
-		<input type="date"><br><br>
-		<span>&lt;input <b>type="datetime-local"</b>&gt;</span> - для выбора даты и времени
-		<h4>Результат:</h4>
-		<input type="datetime-local"><br><br>
-		<span>&lt;input <b>type="email"</b>&gt;</span> - для почты
-		<h4>Результат:</h4>
-		<input type="email"><br><br>
-		<span>&lt;input <b>type="number"</b>&gt;</span> - для чисел
-		<h4>Результат:</h4>
-		<input type="number"><br><br>
-		<span>&lt;input <b>type="range" min="1" max="10" step="1"</b>&gt;</span> - для выбора чисел от, до и какому кратное
-		<h4>Результат:</h4>
-		<input type="range" min="1" max="10" step="1"><br><br>
-		<span>&lt;input <b>type="search"</b>&gt;</span> - для поиска
-		<h4>Результат:</h4>
-		<input type="search"><br><br>
-		<span>&lt;input <b>type="tel"</b>&gt;</span> - для номера телефона
-		<h4>Результат:</h4>
-		<input type="tel"><br><br>
-		<span>&lt;input <b>type="time"</b>&gt;</span> - для времени
-		<h4>Результат:</h4>
-		<input type="time"><br><br>
-		<span>&lt;input <b>type="url"</b>&gt;</span> - для ссылок
-		<h4>Результат:</h4>
-		<input type="url"><br><br>
-		<span>&lt;input <b>type="month"</b>&gt;</span> - для месяца
-		<h4>Результат:</h4>
-		<input type="month"><br><br>
-		<span>&lt;input <b>type="week"</b>&gt;</span> - для недели
-		<h4>Результат:</h4>
-		<input type="week"><br><br>
-		<span>&lt;input type="text" <b> list="k"&gt;&lt;datalist id="k"&gt;&lt;option value="Текст"&gt;&lt;/option&gt;&lt;/datalist&gt;</b></span> - позволяет выбрать из списка
-		<h4>Результат:</h4>
-		<input type="text" list="k"><datalist id="k"><option value="Текст"></option></datalist>
-	</fieldset>
+			<br>
+			<legend>
+				<h3>&lt;input&gt;</h3>
+			</legend>
+			<span>&lt;form action=""&gt;&lt;input type="text"&gt;&lt;/form&gt;</span> - создаёт поле для ввода информации в
+			форму<br>
+			<span>&lt;input <b>autocomplete="on"</b> &gt;</span> - включает автозаполнение
+			<h4>Результат:</h4>
+			<input autocomplete="on" type="text"> <br><br>
+			<span>&lt;input <b> autofocus</b>&gt;</span> - можно вводить данные без нажатия на поле, курсор устанавливается на
+			поле
+			<h4>Результат:</h4>
+			Результата не будет из-за перехода сразу на этот тег при загрузке страницы <br><br>
+			<span>&lt;input <b>placeholder="Текст"</b>&gt;</span> - делает подсказку на поле
+			<h4>Результат:</h4>
+			<input placeholder="Текст" type="text"> <br><br>
+			<span>&lt;input <b>required</b> &gt;</span> - обязательное поле
+			<h4>Результат:</h4>
+			<input required type="text"><br><br>
+			<span>&lt;input <b>value="Текст"</b>&gt;</span> - текст уже буден набран в поле, также используется для текста
+			кнопки
+			<h4>Результат:</h4>
+			<input value="Текст" type="text"><br><br>
+			<span>&lt;input <b>readonly</b> &gt;</span> - нельзя изменить, только прочесть
+			<h4>Результат:</h4>
+			<input value="Текст" readonly type="text"><br><br>
+			<span>&lt;input <b>type="button"</b>&gt;</span> - для кнопки
+			<h4>Результат:</h4>
+			<input type="button" value="Текст"><br><br>
+			<span>&lt;input <b>type="checkbox"</b>&gt;</span> - устанавливает чекбокс
+			<h4>Результат:</h4>
+			<input type="checkbox"> Текст<br><br>
+			<span>&lt;input <b>type="file"</b>&gt;</span> - в качестве поля требует файл
+			<h4>Результат:</h4>
+			<input type="file"><br><br>
+			<span>&lt;input <b>type="image"</b> &gt;</span> - в качестве кнопки для отправки использует картинку
+			<h4>Результат:</h4>
+			<input width="100px" type="image" src="./kot.jpg"><br><br>
+			<span>&lt;input <b>type="password"</b> &gt;</span> - используется для паролей
+			<h4>Результат:</h4>
+			<input type="password"><br><br>
+			<span>&lt;input <b>type="radio"</b>&gt;</span> - для выбора из элементов
+			<h4>Результат:</h4>
+			<input type="radio"> Текст<br><br>
+			<span>&lt;input <b>type="reset"</b>&gt;</span> - сброс формы
+			<h4>Результат:</h4>
+			<input type="reset"><br><br>
+			<span>&lt;input <b>type="sumbit"</b>&gt;</span> - для отправки формы
+			<h4>Результат:</h4>
+			<input type="submit"><br><br>
+			<span>&lt;input <b>type="text"</b>&gt;</span> - для ввода любого текста
+			<h4>Результат:</h4>
+			<input type="text"><br><br>
+			<span>&lt;input <b>type="color"</b> &gt;</span> - для выбора цвета
+			<h4>Результат:</h4>
+			<input type="color"><br><br>
+			<span>&lt;input <b>type="date"</b>&gt;</span> - для выбора даты
+			<h4>Результат:</h4>
+			<input type="date"><br><br>
+			<span>&lt;input <b>type="datetime-local"</b>&gt;</span> - для выбора даты и времени
+			<h4>Результат:</h4>
+			<input type="datetime-local"><br><br>
+			<span>&lt;input <b>type="email"</b>&gt;</span> - для почты
+			<h4>Результат:</h4>
+			<input type="email"><br><br>
+			<span>&lt;input <b>type="number"</b>&gt;</span> - для чисел
+			<h4>Результат:</h4>
+			<input type="number"><br><br>
+			<span>&lt;input <b>type="range" min="1" max="10" step="1"</b>&gt;</span> - для выбора чисел от, до и какому
+			кратное
+			<h4>Результат:</h4>
+			<input type="range" min="1" max="10" step="1"><br><br>
+			<span>&lt;input <b>type="search"</b>&gt;</span> - для поиска
+			<h4>Результат:</h4>
+			<input type="search"><br><br>
+			<span>&lt;input <b>type="tel"</b>&gt;</span> - для номера телефона
+			<h4>Результат:</h4>
+			<input type="tel"><br><br>
+			<span>&lt;input <b>type="time"</b>&gt;</span> - для времени
+			<h4>Результат:</h4>
+			<input type="time"><br><br>
+			<span>&lt;input <b>type="url"</b>&gt;</span> - для ссылок
+			<h4>Результат:</h4>
+			<input type="url"><br><br>
+			<span>&lt;input <b>type="month"</b>&gt;</span> - для месяца
+			<h4>Результат:</h4>
+			<input type="month"><br><br>
+			<span>&lt;input <b>type="week"</b>&gt;</span> - для недели
+			<h4>Результат:</h4>
+			<input type="week"><br><br>
+			<span>&lt;input type="text" <b> list="k"&gt;&lt;datalist id="k"&gt;&lt;option
+					value="Текст"&gt;&lt;/option&gt;&lt;/datalist&gt;</b></span> - позволяет выбрать из списка
+			<h4>Результат:</h4>
+			<input type="text" list="k"><datalist id="k">
+				<option value="Текст"></option>
+			</datalist>
+		</fieldset>
 	</form>
 	<h2>&lt;footer&gt;</h2>
-	<span>&lt;footer&gt;...&lt;/footer&gt;</span> - используется для разметки и группировки элементов в самом конце сайта, не обязательный
-	<h2></h2>
+	<span>&lt;footer&gt;...&lt;/footer&gt;</span> - используется для разметки и группировки элементов в самом конце сайта,
+	не обязательный
+	<h2 id="h">&lt;h1-6&gt;</h2>
+	<span>&lt;h1&gt;Текст&lt;/h1&gt;</span> - используется для заголовка, чем меньше число, тем меньше текст
+	<h4>Результат:</h4>
+	<h1>Текст</h1> - h1
+	<h3>Текст</h3> - h3
+	<h2>&lt;header&gt;</h2>
+	<span>&lt;header&gt;...&lt;/header&gt;</span> - для группировки элементов шапки сайта
+	<h2>&lt;hr&gt;</h2>
+	<span>&lt;hr&gt;</span> - создаёт линию
+	<h4>Результат:</h4>
+	<hr>
+	<h2>&lt;i&gt;</h2>
+	<span>&lt;i&gt;Текст&lt;/i&gt;</span> - делает текст курсивом
+	<h4>Результат:</h4>
+	<i>Текст</i>
+
 	<!-- <div>
 	caption, col, colgroup, 
 </div> -->
