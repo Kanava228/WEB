@@ -7,22 +7,32 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>HTML</title>
 	<link rel="stylesheet" href="./css/html.css">
+	<link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/2048px-HTML5_Badge.svg.png" type="image/x-icon">
 </head>
 
 <body>
-	<b> <big>
-			<details open>
-				<ul>
-					<li><a href="#a">a</a></li>
-					<li><a href="#b">b</a></li>
-					<li><a href="#c">c</a></li>
-					<li><a href="#d">d</a></li>
-					<li><a href="#e">e</a></li>
-					<li><a href="#f">f</a></li>
-					<li><a href="#h"></a></li>
-				</ul>
-			</details>
-		</big></b>
+	<nav><b> <big>
+				<details>
+					<ul>
+						<li><a href="#a">a</a></li>
+						<li><a href="#b">b</a></li>
+						<li><a href="#c">c</a></li>
+						<li><a href="#d">d</a></li>
+						<li><a href="#e">e</a></li>
+						<li><a href="#f">f</a></li>
+						<li><a href="#h">h</a></li>
+						<li><a href="#i">i</a></li>
+						<li><a href="#l">l</a></li>
+						<li><a href="#n">n</a></li>
+						<li><a href="#o">o</a></li>
+						<li><a href="#p">p</a></li>
+						<li><a href="#q">q</a></li>
+						<li><a href="#s">s</a></li>
+						<li><a href="#t">t</a></li>
+						<li><a href="#u">u</a></li>
+					</ul>
+				</details>
+			</big></b></nav>
 	<h2 id="a">&lt;a&gt;</h2>
 	<ol>
 		<li>
@@ -190,13 +200,18 @@
 	то есть данные, которые когда-то вводились в поле
 	<form action="">
 		<h3>&lt;fieldset&gt;</h3>
-		<span>&lt;fieldset&gt;...&lt;/fieldset&gt;</span> - объединение полей
+		<span>&lt;fieldset&gt;&lt;legend&gt;...&lt;/legend&gt;&lt;/fieldset&gt;</span> - объединение полей, в legend
+		записывают начало для объединения
 		<h4>Результат:</h4>
 		<fieldset>
 			<br>
 			<legend>
+				<h3>&lt;textarea&gt;</h3></legend>
+				<span>&lt;textarea&gt;&lt;/textarea&gt;</span> - поле для большого количества текста с возможностью переносить строки
+				<h4>Результат:</h4>
+				<textarea></textarea>
 				<h3>&lt;input&gt;</h3>
-			</legend>
+			
 			<span>&lt;form action=""&gt;&lt;input type="text"&gt;&lt;/form&gt;</span> - создаёт поле для ввода информации в
 			форму<br>
 			<span>&lt;input <b>autocomplete="on"</b> &gt;</span> - включает автозаполнение
@@ -305,14 +320,92 @@
 	<span>&lt;hr&gt;</span> - создаёт линию
 	<h4>Результат:</h4>
 	<hr>
-	<h2>&lt;i&gt;</h2>
+	<h2 id="i">&lt;i&gt;</h2>
 	<span>&lt;i&gt;Текст&lt;/i&gt;</span> - делает текст курсивом
 	<h4>Результат:</h4>
 	<i>Текст</i>
-
-	<!-- <div>
-	caption, col, colgroup, 
-</div> -->
+	<h2>&lt;iframe&gt;</h2>
+	<span>&lt;iframe src=""&gt;...&lt;iframe&gt;</span> - создаёт окно с фреймом и ссылкой на фрейм
+	<h4>Результат:</h4>
+	<iframe width="504" height="500" id="gmap_canvas"
+		src="https://maps.google.com/maps?q=cherkassy&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"
+		marginheight="0" marginwidth="0"></iframe>
+	<h2>&lt;img&gt;</h2>
+	<span>&lt;img src="" alt=""&gt;</span> - добавляет картинку на сайт по ссылке и описание картинки, которое будет
+	отображаться, если картинка не загрузилась
+	<img src="kot.jpg" alt="Кот">
+	<h2 id="l">&lt;label&gt;</h2>
+	<span>&lt;label for=""&gt;Текст&lt;/label&gt;</span> - нужен чтобы связать текст с полем, для этого полю дают id и его
+	записывают в for
+	<h4>Результат:</h4>
+	<label for="ga">Текст </label><input id="ga" type="text">
+	<h2>&lt;link&gt;</h2>
+	<span>&lt;link href=""&gt;</span> - в head, нужен для подключения файлов или ссылок, например шрифт и стилизация в css
+	<h2 id="n">&lt;nav&gt;</h2>
+	<span>&lt;nav&gt;...&lt;/nav&gt;</span> - внутри размещаются ссылки для навигации по странице
+	<h2 id="o">&lt;ol&gt;</h2>
+	<span>&lt;ol&gt;&lt;li&gt;&lt;/li&gt;&lt;/ol&gt;</span> - создаёт нумерованный список и пункты к нему
+	<h4>Результат:</h4>
+	<ol>
+		<li>Текст</li>
+		<li>Текст</li>
+	</ol>
+	<h2 id="p">&lt;p&gt;</h2>
+	<span>&lt;p&gt;Текст&lt;p&gt;</span> - используется для абзацов, объединить текст в 1 тег
+	<h2>&lt;pre&gt;</h2>
+	<span>&lt;pre&gt;Текст&lt;/pre&gt;</span> - отображает текст со всеми пробелами и переносами без тега br
+	<h2>&lt;progress&gt;</h2>
+	<span>&lt;progress value="" max=""&gt;&lt;/progress&gt;</span> - создаёт прогресбар, его текущее значение и его
+	максимальное значение
+	<h4>Результат:</h4>
+	<progress value="30" max="100">Ты бот, у тебя не поддерживается этот тег, здесь 30%</progress>
+	<h2 id="q">&lt;q&gt;</h2>
+	<span>&lt;q&gt;Текст&lt;/q&gt;</span> - для цитат
+	<h4>Результат:</h4>
+	<q>Текст</q>
+	<h2 id="s">&lt;script&gt;</h2>
+	<span>&lt;script src=""&gt;...&lt;/script&gt;</span> - вставляет JS файл, без src в этом теге можно писать код на JS
+	<h2>&lt;select&gt;</h2>
+	<span>&lt;select&gt;&lt;option&gt;&lt;/option&gt;&lt;/select&gt;</span> - позволяет выбрать значение из списка, где
+	option пункт списка
+	<h4>Результат:</h4>
+	<select name="" id="">
+		<option value="">Выберите негра</option>
+		<option value="">Чёрный</option>
+	</select>
+	<h2>&lt;span&gt;</h2>
+	<span>&lt;span&gt;Текст&lt;/span&gt;</span> - используется для выделения строчного элемента, который нужно
+	выделить/стилизировать
+	<h2 id="t">&lt;table&gt;</h2>
+	<span>&lt;table&gt;...&lt;/table&gt;</span> - создаёт таблицу
+	<h3>&lt;tr&gt;</h3>
+	<span>&lt;tr&gt;...&lt;/tr&gt;</span> - создаёт строку для таблицы
+	<h3>&lt;td&gt;</h3>
+	<span>&lt;td&gt;...&lt;/td&gt;</span> - создаёт ячейку для таблицы, записывается в тег tr
+	<h4>Результат:</h4>
+	<table border="1px">
+		<tr>
+			<td>Текст</td>
+		</tr>
+	</table>
+	<h3>&lt;th&gt;</h3>
+	<span>&lt;th&gt;...&lt;/th&gt;</span> - используется для заголовков в таблице, записывается в теге tr
+	<h4>Результат:</h4>
+	<table border="1px">
+		<tr>
+			<th>Текст</th>
+		</tr>
+	</table>
+	<h2>&lt;title&gt;</h2>
+	<span>&lt;title&gt;Текст&lt;/title&gt;</span> - отображает текст во вкладке, тег записывается в head
+	<h2 id="u">&lt;ul&gt;</h2>
+	<span>&lt;ul&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ul&gt;</span> - маркированный список
+	<h4>Результат:</h4>
+	<ul><li>Текст</li></ul>
+	<h2 id="v">&lt;video&gt;</h2>
+	<span>&lt;video&gt;&lt;/video&gt;</span> - атрибут для вставки видео, атрибуты такие же как у тега audio
+	<h4>Результат:</h4>
+	<video width="320" height="240" controls src="./video.mp4"></video>
 </body>
 
 </html>
