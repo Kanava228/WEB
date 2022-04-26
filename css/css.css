@@ -1,0 +1,113 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+span {
+	color: red;
+}
+h2 {
+	text-align: center;
+}
+.accent-color {
+	accent-color: #000000;
+}
+.ac {
+	accent-color: rgb(234, 92, 26);
+}
+#container {
+  height:200px;
+  width: 100px;
+  align-content: center; 
+  background-color: #8c8c8c;
+}
+#container1 {
+  height:200px;
+  width: 100px;
+  align-content: start; 
+  background-color: #8c8c8c;
+}
+#container2 {
+  height:200px;
+  width: 100px;
+  align-content: end; 
+  background-color: #8c8c8c;
+}
+#container3 {
+  height:200px;
+  width: 100px;
+  align-content: flex-start; 
+  background-color: #8c8c8c;
+}
+#container4 {
+  height:200px;
+  width: 100px;
+  align-content: flex-end; 
+  background-color: #8c8c8c;
+}
+#container5 {
+  height:200px;
+  width: 100px;
+  align-content: space-between; 
+  background-color: #8c8c8c;
+}
+#container6 {
+  height:200px;
+  width: 100px;
+  align-content: space-around; 
+  background-color: #8c8c8c;
+}
+#container7 {
+  height:200px;
+  width: 100px;
+  align-content: space-evenly; 
+  background-color: #8c8c8c;
+}
+#container8 {
+  height:200px;
+  width: 100px;
+  align-content: stretch; 
+  background-color: #8c8c8c;
+}
+
+
+
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 50px);
+}
+
+div > div {
+  box-sizing: border-box;
+  border: 2px solid #8c8c8c;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#item1 {
+  background-color: #8cffa0;
+  min-height: 30px;
+}
+
+#item2 {
+  background-color: #a0c8ff;
+  min-height: 50px;
+}
+
+#item3 {
+  background-color: #ffa08c;
+  min-height: 40px;
+}
+
+#item4 {
+  background-color: #ffff8c;
+  min-height: 60px;
+}
+
+
