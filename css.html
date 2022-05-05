@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
 	<link rel="stylesheet" href="./css/css.css">
 	<link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/732/732190.png" type="image/x-icon">
 </head>
+
 <body>
 	<details>
 		<ul>
@@ -15,82 +17,71 @@
 		</ul>
 	</details>
 	<h2 id="a">accent-color</h2>
-	<span>accent-color: #000000</span> - изменяет цвет чекбокса, прогресбара, радиокнопки или диапазона
+	<span>accent-color: #000000</span> - змінює колір чекбоксу, прогресу, радіокнопки або діапазону
 	<h4>Результат:</h4>
 	<input type="checkbox" class="accent-color"></input><br>
 	<progress value="20" max="100" class="ac"></progress>
-	<h2>align-content</h2>
-	<span>align-content: <b>center</b> </span> - размещает элементы вокруг центра контейнера
+	<h2>animation-name</h2>
+	<span>animation-name: name</span> - назва анімації, щоб зв'язати з @keyframes
+	<h2>@keyframes</h2>
+	<pre><span>@keyframes name {
+	0% {}
+	100% {}
+}</span></pre> встановлює CSS властивості на початку, кінці та проміжні при необхідності, які будуть змінюватися в ході
+	анімації
+	<h2>animation-duration</h2>
+	<span>animation-duration: 3s</span> - тривалість анімації від 0% до 100%; ці 3 значення є обов'язковими для створення
+	анімацій
+	<div class="circle"></div>
+	<h2>animation-timing-function</h2>
+	<span>animation-timing-function: <b> ease</b></span> - перехід починається повільно, швидко розганяється і
+	сповільнюється в кінці (встановлено за замовчуванням) <br>
+	<span>animation-timing-function: <b>ease-in</b> </span> - перехід починається повільно, а потім плавно прискорюється в
+	кінці
 	<h4>Результат:</h4>
-	<div id="container" class="flex">
-		<div id="item1">1</div>
-		<div id="item2">2</div>
-		<div id="item3">3</div>
-		<div id="item4">4</div>
-	</div> <br>
-	<span>align-content: <b>start</b></span> - размещает элементы в начале контейнера
+	<div class="circle q"></div><br>
+	<span>animation-timing-function: <b>ease-out</b> </span> - перехід починається швидко і плавно сповільнюється в кінці
 	<h4>Результат:</h4>
-	<div id="container1" class="flex">
-		<div id="item1">1</div>
-		<div id="item2">2</div>
-		<div id="item3">3</div>
-		<div id="item4">4</div>
-	</div><br>
-	<span>align-content: <b>end</b></span> - размещает элементы в конце контейнера
+	<div class="circle w"></div> <br>
+	<span>animation-timing-function: <b>ease-in-out</b> </span> - перехід повільно починається і повільно закінчується
 	<h4>Результат:</h4>
-	<div id="container2" class="flex">
-		<div id="item1">1</div>
-		<div id="item2">2</div>
-		<div id="item3">3</div>
-		<div id="item4">4</div>
-	</div><br>
-	<span>align-content: <b>flex-start</b></span> - размещает элементы flex в начале контейнера
+	<div class="circle e"></div><br>
+	<span>animation-timing-function: <b> linear</b></span> - перехід відбувається рівномірно протягом усього часу, без
+	вагань у швидкості
 	<h4>Результат:</h4>
-	<div id="container3" class="flex">
-		<div id="item1">1</div>
-		<div id="item2">2</div>
-		<div id="item3">3</div>
-		<div id="item4">4</div>
-	</div><br>
-	<span>align-content: <b>flex-end</b></span> - размещает элементы flex в конце контейнера
+	<div class="circle r"></div>
+	<h2>animation-iteration-count</h2>
+	<span>animation-iteration-count: 4</span> - задає к-сть разів повторення анімації
 	<h4>Результат:</h4>
-	<div id="container4" class="flex">
-		<div id="item1">1</div>
-		<div id="item2">2</div>
-		<div id="item3">3</div>
-		<div id="item4">4</div>
-	</div><br>
-	<span>align-content: <b>space-between</b></span> - размещает элементы равномерно, начало вверху
+	<div class="circle t"></div><br>
+	<span>animation-iteration-count: <b>infinite</b> </span> - нескінченно повторює анімацію
 	<h4>Результат:</h4>
-	<div id="container5" class="flex">
-		<div id="item1">1</div>
-		<div id="item2">2</div>
-		<div id="item3">3</div>
-		<div id="item4">4</div>
-	</div><br>
-	<span>align-content: <b>space-around</b></span> - размещает элементы равномерно, сверху и внизу контейнера отступ, как половина блока контента
+	<div class="circle y"></div>
+	<h2>animation-direction</h2>
+	<span>animation-direction: <b>alternate</b> </span> - кожен парний прохід по кадрах програватиметься у зворотному
+	порядку
 	<h4>Результат:</h4>
-	<div id="container6" class="flex">
-		<div id="item1">1</div>
-		<div id="item2">2</div>
-		<div id="item3">3</div>
-		<div id="item4">4</div>
-	</div><br>
-	<span>align-content: <b>space-evenly</b></span> - размещает элементы равномерно, все отступы равны
+	<div class="circle u y"></div>
+	<span>animation-direction: <b>reverse</b> </span> - кадри програватимуться у зворотному порядку
 	<h4>Результат:</h4>
-	<div id="container7" class="flex">
-		<div id="item1">1</div>
-		<div id="item2">2</div>
-		<div id="item3">3</div>
-		<div id="item4">4</div>
-	</div><br>
-	<span>align-content: <b>stretch</b></span> - размещает элементы равномерно, растягивает єлементы до заполнения
+	<div class="circle i y"></div>
+	<span>animation-direction: <b>alternate-reverse</b> </span> - кожен непарний прохід по кадрах програватиметься у зворотному порядку
 	<h4>Результат:</h4>
-	<div id="container6" class="flex">
-		<div id="item1">1</div>
-		<div id="item2">2</div>
-		<div id="item3">3</div>
-		<div id="item4">4</div>
-	</div>
+	<div class="circle o y"></div>
+	<h2>animation-play-state</h2>
+	<span>animation-play-state: paused</span> - зупиняє анімацію при події, в даному випадку використовується наведення на коло
+	<h4>Результат:</h4>
+	<div class="circle y p"></div>
+	<h2>animation-delay</h2>
+	<span>animation-delay: 3s</span> - затримує початок анімації на 3 секунди 
+	<h4>Результат:</h4>
+	<div class="circle y a"></div>
+	<h2>animation-fill-mode</h2>
+	<span>animation-fill-mode: forwards</span> - після закінчення анімації примінює властивість, яка знаходиться на 100%
+	<h4>Результат:</h4>
+	<div class="circle s"></div>
+	<h2>animation</h2>
+	<span>animation: |animation-name|, |animation-duration|, |animation-timing-function|, |animation-iteration-count|, |animation-direction|, |animation-delay|, |animation-fill-mode|</span> - використовується дли швидкого запису значень тегів, всі значення потрібних властивостей записуються відповідно вказаного порядку 
 </body>
+
 </html>
