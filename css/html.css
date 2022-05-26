@@ -1,0 +1,12 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+span {
+	color: red;
+}
+h2 {
+	text-align: center;
+}
+ul {
+	list-style-type: disc;
+}

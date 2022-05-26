@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS</title>
+	<link rel="stylesheet" href="../css/css.css">
+	<link rel="shortcut icon" href="../img/css.png" type="image/x-icon">
+</head>
+
+<body>
+	<details>
+		<ul>
+			<li><a href="#a"></a></li>
+		</ul>
+	</details>
+	<h2 id="a">accent-color</h2>
+	<span>accent-color: #000000</span> - змінює колір чекбоксу, прогресу, радіокнопки або діапазону
+	<h4>Результат:</h4>
+	<input type="checkbox" class="accent-color"></input><br>
+	<progress value="20" max="100" class="ac"></progress>
+	<h2>animation-name</h2>
+	<span>animation-name: name</span> - назва анімації, щоб зв'язати з @keyframes
+	<h2>@keyframes</h2>
+	<pre><span>@keyframes name {
+	0% {}
+	100% {}
+}</span></pre> встановлює CSS властивості на початку, кінці та проміжні при необхідності, які будуть змінюватися в ході
+	анімації
+	<h2>animation-duration</h2>
+	<span>animation-duration: 3s</span> - тривалість анімації від 0% до 100%; ці 3 значення є обов'язковими для створення
+	анімацій
+	<div class="circle"></div>
+	<h2>animation-timing-function</h2>
+	<span>animation-timing-function: <b> ease</b></span> - перехід починається повільно, швидко розганяється і
+	сповільнюється в кінці (встановлено за замовчуванням) <br>
+	<span>animation-timing-function: <b>ease-in</b> </span> - перехід починається повільно, а потім плавно прискорюється в
+	кінці
+	<h4>Результат:</h4>
+	<div class="circle q"></div><br>
+	<span>animation-timing-function: <b>ease-out</b> </span> - перехід починається швидко і плавно сповільнюється в кінці
+	<h4>Результат:</h4>
+	<div class="circle w"></div> <br>
+	<span>animation-timing-function: <b>ease-in-out</b> </span> - перехід повільно починається і повільно закінчується
+	<h4>Результат:</h4>
+	<div class="circle e"></div><br>
+	<span>animation-timing-function: <b> linear</b></span> - перехід відбувається рівномірно протягом усього часу, без
+	вагань у швидкості
+	<h4>Результат:</h4>
+	<div class="circle r"></div>
+	<h2>animation-iteration-count</h2>
+	<span>animation-iteration-count: 4</span> - задає к-сть разів повторення анімації
+	<h4>Результат:</h4>
+	<div class="circle t"></div><br>
+	<span>animation-iteration-count: <b>infinite</b> </span> - нескінченно повторює анімацію
+	<h4>Результат:</h4>
+	<div class="circle y"></div>
+	<h2>animation-direction</h2>
+	<span>animation-direction: <b>alternate</b> </span> - кожен парний прохід по кадрах програватиметься у зворотному
+	порядку
+	<h4>Результат:</h4>
+	<div class="circle u y"></div>
+	<span>animation-direction: <b>reverse</b> </span> - кадри програватимуться у зворотному порядку
+	<h4>Результат:</h4>
+	<div class="circle i y"></div>
+	<span>animation-direction: <b>alternate-reverse</b> </span> - кожен непарний прохід по кадрах програватиметься у
+	зворотному порядку
+	<h4>Результат:</h4>
+	<div class="circle o y"></div>
+	<h2>animation-play-state</h2>
+	<span>animation-play-state: paused</span> - зупиняє анімацію при події, в даному випадку використовується наведення на
+	коло
+	<h4>Результат:</h4>
+	<div class="circle y p"></div>
+	<h2>animation-delay</h2>
+	<span>animation-delay: 3s</span> - затримує початок анімації на 3 секунди
+	<h4>Результат:</h4>
+	<div class="circle y a"></div>
+	<h2>animation-fill-mode</h2>
+	<span>animation-fill-mode: forwards</span> - після закінчення анімації примінює властивість, яка знаходиться на 100%
+	<h4>Результат:</h4>
+	<div class="circle s"></div>
+	<h2>animation</h2>
+	<span>animation: |animation-name|, |animation-duration|, |animation-timing-function|, |animation-iteration-count|,
+		|animation-direction|, |animation-delay|, |animation-fill-mode|</span> - використовується дли швидкого запису
+	значень тегів, всі значення потрібних властивостей записуються відповідно вказаного порядку
+	<h2>background-attachment</h2>
+	<span>background-attachment: <b>scroll</b></span> - (за замовчуванням) фон фіксується відносно самого елемента і не прокручується з його
+	вмістом 
+	<h4>Результат:</h4>
+	<div class="bg-a-s bg-atta">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non similique perspiciatis
+		tempora illum unde sit libero eaque quis nulla. Ab enim voluptatibus sequi tempora reiciendis et hic dolores commodi
+		incidunt.</div><br>
+	<span>background-attachment: <b>fixed</b></span> - фон фіксується щодо області перегляду
+	<h4>Результат:</h4>
+	<div class="bg-a-f bg-atta">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non quisquam a tempora
+		reiciendis sunt veritatis, maxime tenetur fugit, nihil ad esse nesciunt odio numquam quos. Vero blanditiis optio
+		adipisci nostrum.</div><br>
+	<span>background-attachment: <b>local</b></span> - фон фіксується щодо вмісту елемента, якщо елемент має механізм
+	прокручування, фон прокручується з вмістом елемента, і область малювання фону і область позиціонування фону
+	відносяться до області елемента, що прокручується, а не до межі, що обрамляє їх
+	<h4>Результат:</h4>
+
+	<div class="bg-atta bg-a-l">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam libero repellat ullam nobis!
+		Facere dolorum eveniet architecto doloribus at, officia doloremque magni veritatis tempore ea reiciendis perferendis
+		dolores ullam corrupti! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, consectetur aliquid iure
+		perspiciatis praesentium ab architecto fuga commodi eligendi consequatur cupiditate. Esse sed sequi eaque repellat
+		quasi possimus quibusdam unde officia maiores qui magni modi eum illo alias, placeat, amet quam accusantium rerum
+		quas perspiciatis dolorum. Fuga eius quos magni distinctio ducimus libero explicabo exercitationem! Saepe voluptas
+		deserunt laboriosam, optio quos dolore autem, pariatur, dicta excepturi omnis esse veritatis! Consequatur quisquam
+		tempora totam explicabo illo eligendi necessitatibus in distinctio sapiente est, ad non fugiat ullam officia vero
+		sequi exercitationem ducimus reiciendis facere unde esse earum ea? Saepe dignissimos a architecto! Lorem ipsum dolor
+		sit, amet consectetur adipisicing elit. Cum natus sequi est repudiandae explicabo. Quod porro quis molestias autem,
+		laudantium dolore natus dolores praesentium iste nam? Facere non harum, veniam odio dolorem vitae soluta quam
+		voluptates odit, voluptas ducimus ipsam at repellendus modi sed, error explicabo repudiandae quis quod cum!
+		Voluptas, sit. Autem voluptate quos, doloribus dolore ipsa consequuntur a repellendus possimus fuga rerum.
+		Necessitatibus nostrum doloribus cupiditate. Fugit amet, dolores quae laudantium distinctio consequuntur. Cumque
+		deserunt ullam voluptate aspernatur sit amet quia praesentium vel quisquam modi autem neque, labore, natus iste, ea
+		quam ad corrupti in! Deleniti quod vitae cum sunt nemo explicabo soluta molestias odit cupiditate amet autem
+		delectus adipisci rem mollitia perspiciatis provident, officia vero, fuga perferendis modi at veritatis repudiandae
+		aut. Suscipit ipsam quod corrupti consectetur nemo aut sapiente neque quibusdam, minima quidem omnis laboriosam quia
+		quam consequatur odio fugit quaerat nesciunt minus officiis perferendis iusto molestiae explicabo adipisci. Ea fugit
+		quisquam, totam nisi ducimus accusantium facere odio. Officia illum accusamus omnis quia! Nulla fugiat in esse nemo
+		cum. Reprehenderit est iure beatae hic error! Sit nulla nemo doloremque necessitatibus ipsum nesciunt, ea earum quos
+		laboriosam recusandae ab eligendi architecto vero nihil, neque quisquam? Placeat aspernatur nobis esse ratione at,
+		ipsum ipsam repellat tempora officiis voluptatem sapiente, porro, in neque reiciendis dignissimos optio facilis
+		nulla aliquam eos dolorum nemo! In, vitae nemo! Harum impedit eaque repellendus doloremque maiores hic maxime
+		recusandae, est quas sit doloribus eum facilis officia modi labore, aut adipisci ea consectetur at explicabo dolore.
+		Eos nihil nobis quaerat laudantium maiores ullam eius non placeat blanditiis delectus facilis reiciendis asperiores
+		nisi, illo quo vero unde cupiditate sapiente ad facere iure, reprehenderit vel provident sed? Recusandae temporibus
+		praesentium, quas vitae sunt similique in deserunt quo a minima quibusdam, quod consequuntur alias! Sit est optio
+		natus doloribus corrupti quaerat rem modi. Natus distinctio eum repudiandae? Eaque corporis commodi nostrum eum
+		eveniet aliquam, ipsam quod, at dolores perferendis voluptatibus facere harum iste nemo non tempora, cumque maxime
+		sint. Nihil officia quae cum unde atque provident cumque debitis pariatur! Illo, alias quidem aliquam sequi quis
+		voluptate! Sed omnis possimus amet aliquid cupiditate nisi et labore, corrupti enim sunt? Vel excepturi iste
+		veritatis obcaecati accusamus. Explicabo, accusamus asperiores delectus cupiditate suscipit tempore beatae impedit
+		molestiae magnam at ullam enim corrupti necessitatibus! Illo autem harum quibusdam sapiente asperiores dolorem
+		consequuntur, temporibus debitis saepe repudiandae culpa placeat rem doloribus assumenda numquam. Lorem ipsum, dolor
+		sit amet consectetur adipisicing elit. Dolores impedit cumque dolore error facilis asperiores omnis provident velit,
+		quibusdam sunt sint quis ullam laudantium nobis unde necessitatibus voluptatibus saepe debitis temporibus tenetur!
+		Totam maiores reprehenderit eius doloribus facilis itaque dolor dolores non deserunt commodi, numquam dignissimos
+		accusamus porro in eligendi dolore magni reiciendis velit explicabo quidem adipisci incidunt nobis assumenda
+		recusandae? Rem fuga quasi quaerat quis, consequuntur laboriosam quam sit id quisquam corrupti soluta est
+		perferendis aperiam provident voluptate veritatis porro assumenda doloribus esse! Similique repellendus culpa eos
+		perferendis assumenda dolores vero beatae aspernatur sapiente ducimus delectus, nam quaerat. Architecto iure, nihil
+		quidem eos aut nostrum perspiciatis beatae, facilis a molestiae non! Soluta assumenda quisquam vel sit ea accusamus,
+		reiciendis inventore quae iste omnis quas nemo suscipit voluptate? Suscipit quas ipsa quam deleniti, rerum modi unde
+		eligendi voluptatibus alias quidem tenetur in ex inventore libero laudantium molestias culpa quos rem ab ut.
+		Dignissimos quod, molestiae unde nostrum illo voluptatum ducimus temporibus officiis aspernatur atque consequuntur,
+		ipsa labore quibusdam voluptatibus id voluptates. Porro excepturi fuga veritatis suscipit, voluptatum doloribus
+		neque, officiis saepe debitis vel, eveniet natus! Eius, amet velit. Voluptas itaque expedita eveniet mollitia. Earum
+		nihil distinctio ea deserunt error sunt aut hic ex doloribus rem cum omnis sapiente, libero similique aliquam
+		corporis accusantium. Itaque maiores vel, facilis commodi suscipit accusantium nisi est inventore ipsa cum velit.
+		Numquam enim eaque, pariatur tempora fugit eius. Aliquid, adipisci tempore temporibus cum optio, ad quo atque ipsam
+		vero laudantium molestiae quam porro a inventore reiciendis accusantium distinctio. Est omnis officia commodi
+		nostrum dolorum sunt adipisci? Non quas officia sunt nam, blanditiis ex perferendis, libero velit molestias
+		suscipit, cum sed nihil modi impedit voluptatibus vitae mollitia consectetur. Aliquam ullam ab harum recusandae,
+		repellat mollitia impedit commodi? Inventore aut doloribus voluptatibus illo similique quos dolorum, officiis odit
+		tempore omnis dolores aliquam? Blanditiis quisquam voluptates placeat illum culpa sed modi sapiente numquam dicta
+		qui, eveniet doloribus. Reiciendis, aspernatur asperiores! Quidem doloribus, optio ipsam dicta, dolores eligendi
+		harum suscipit culpa ipsa officiis veniam molestiae expedita nesciunt velit cupiditate repudiandae voluptas sed
+		commodi nobis blanditiis. Repudiandae, laudantium nam! Fuga id temporibus exercitationem consectetur maxime alias
+		vel deserunt, architecto sapiente excepturi. Placeat odio blanditiis deleniti pariatur rem unde cumque? Tenetur fuga
+		corporis, eligendi laboriosam quibusdam sint ad asperiores. Doloremque aliquam reprehenderit illo, blanditiis sequi
+		natus quae eum corporis maxime, sapiente asperiores omnis et pariatur dolores provident repellat! Et, sed vero?
+	</div>
+	<h2>background-color</h2>
+	<span>background-color: #000000</span> - встановлює фон як колір, кольори можуть бути в форматах: HEX, RGB, RGBA, HSL,
+	HSLA та звичайні назви кольорів, які потім форматуються в HEX
+	<h2>background-image</h2>
+	<span>background-image: url()</span> - встановлює фоном картинку
+	<h2>background-position</h2>
+	<span>background-position: 30% 40%</span> - розміщення фону, виражається англ. словами або відсотками, відступ зліва
+	та зверху відповідно
+	<h2>background-repeat</h2>
+	<span>background-repeat: <b>no-repeat</b></span> - фонове зображення не повторюється, відображається лише 1 раз
+	<h4>Результат:</h4>
+	<div class="bg-rep-nr bg-repeat"></div><br>
+	<span>background-repeat: <b>repeat-x</b></span> - повторює зображення на всю довжину елемента
+	<h4>Результат:</h4>
+	<div class="bg-repeat bg-rep-rep-x"></div><br>
+	<span>background-repeat: <b>repeat-y</b></span> - повторює зображення на всю ширину елемента
+	<h4>Результат:</h4>
+	<div class="bg-repeat bg-rep-rep-y"></div><br>
+	<h2>background-size</h2>
+	<span>background-size: <b>100% 100px</b></span> - задає розмір фону, можна виразити в %, px та значенням auto. записується спочатку ширина, потім довжина
+	<h2>border</h2>
+	<span>border: <b>2px dotted #000000</b></span> - створює рамку навколо елемента чи контейнера. спочатку вказується товщина, потім стиль та колір в усіх форматах 
+	<h4>Результат:</h4>
+	<p id="border-dot">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit adipisci natus numquam expedita vitae quod commodi dolorem provident magnam, facilis earum quo nobis. Optio eaque, illum veritatis officia aliquid eos?</p>
+	<span>border: <b>solid</b></span> - рамка однією суцільною лінією 
+	<h4>Результат:</h4>
+	<p class="border-solid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus impedit dolorum, rerum corrupti consequuntur id molestiae unde sunt dolor maiores numquam, iure reiciendis, consectetur ea fuga. Dignissimos laudantium et exercitationem.</p>
+	<span>border: <b>dashed</b></span> - рамка лініями
+	<h4>Результат:</h4>
+	<p class="border-dashed">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, aliquid expedita tempora hic dolore perferendis nobis quibusdam labore numquam delectus praesentium esse assumenda doloribus velit odio repudiandae dolorem tempore perspiciatis?</p>
+	<span>border: <b>double</b></span> - подвійна рамка
+	<h4>Результат:</h4>
+	<p class="border-double">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit fugiat quibusdam rem asperiores, dolorem, voluptates nobis non, minus aliquid corporis placeat delectus tenetur vel quas libero similique maxime eum accusamus!</p>
+	<span>border: <b>groove</b></span> - рамка з різьбленим виглядом
+	<h4>Результат:</h4>
+	<p class="border-groove">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam praesentium asperiores, earum eveniet, dolorem suscipit atque corporis necessitatibus quasi placeat, veniam modi. Ipsum facilis aut iste nulla error libero quia.</p>
+	<span>border: <b>ridge</b></span> - рамка з видавленим виглядом
+	<h4>Результат:</h4>
+	<p class="border-ridge">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam reprehenderit magni molestiae nisi nobis amet dolor possimus totam officia ipsa laboriosam consectetur sit, ad eveniet, at repudiandae dicta labore numquam.</p>
+	<span>border: <b>inset</b></span> - рамка, яка робить елемент вбудованим
+	<h4>Результат:</h4>
+	<p class="border-inset">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi placeat provident adipisci, quisquam recusandae ad amet atque accusantium magni sunt molestiae, cum eveniet saepe consequatur veritatis sequi nobis aspernatur quam?</p>
+	<span>border: <b>outset</b></span> - відображає межу, завдяки якій елемент виглядає рельєфним
+	<h4>Результат:</h4>
+	<p class="border-outset">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam facere eum deleniti quis optio, minus id soluta modi fugiat incidunt commodi voluptates quisquam omnis minima numquam assumenda nostrum doloribus. Laudantium!</p>
+	<h2>border-radius</h2>
+	<span>border-radius: <b>100px</b></span> - заокруглює краї, можна вказати для всіх, для 2 пар протилежних або для всіх сторін
+	<h4>Результат:</h4>
+	<button class="border-radius"></button>
+	<h2>box-shadow</h2>
+	<span>box-shadow: <b>5px 5px 1px #000000</b></span> - створює тінь об'єкта, спочатку відступ зліва, відступ зверху, радіус розмиття(можна не вказувати) та колір 
+	<h4>Результат:</h4>
+	<div class="box-shadow"></div>
+	<h2>box-sizing</h2>
+	<span>box-sizing: <b>border-box</b></span> - ширина та висота елемента тепер включає в себе крім контента значення border, margin i padding
+</body>
+
+</html>
