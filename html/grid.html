@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>CSS++</title>
-	<link rel="stylesheet" href="../css/grid.css">
+	<link rel="stylesheet" href="../css/grid.css" />
 </head>
+
 <body>
 	<h1>Спочатку розберемо теги, які відповіли за розміщення контенту на сторінці</h1>
 	<h2>align-content</h2>
@@ -14,10 +16,11 @@
 	<h4>Результат:</h4>
 	<div id="container" class="flex">
 		<div id="item1">1</div>
-		<div id="item2">2</div> 
+		<div id="item2">2</div>
 		<div id="item3">3</div>
 		<div id="item4">4</div>
-	</div> <br>
+	</div>
+	<br />
 	<span>align-content: <b>start</b></span> - розміщує елементи на початку контейнера
 	<h4>Результат:</h4>
 	<div id="container1" class="flex">
@@ -25,7 +28,8 @@
 		<div id="item2">2</div>
 		<div id="item3">3</div>
 		<div id="item4">4</div>
-	</div><br>
+	</div>
+	<br />
 	<span>align-content: <b>end</b></span> - розміщує елементи в кінці контейнера
 	<h4>Результат:</h4>
 	<div id="container2" class="flex">
@@ -33,7 +37,8 @@
 		<div id="item2">2</div>
 		<div id="item3">3</div>
 		<div id="item4">4</div>
-	</div><br>
+	</div>
+	<br />
 	<span>align-content: <b>flex-start</b></span> - розміщує елементи flex на початку контейнера
 	<h4>Результат:</h4>
 	<div id="container3" class="flex">
@@ -41,7 +46,8 @@
 		<div id="item2">2</div>
 		<div id="item3">3</div>
 		<div id="item4">4</div>
-	</div><br>
+	</div>
+	<br />
 	<span>align-content: <b>flex-end</b></span> - розміщує елементи flex у кінці контейнера
 	<h4>Результат:</h4>
 	<div id="container4" class="flex">
@@ -49,7 +55,8 @@
 		<div id="item2">2</div>
 		<div id="item3">3</div>
 		<div id="item4">4</div>
-	</div><br>
+	</div>
+	<br />
 	<span>align-content: <b>space-between</b></span> - розміщує елементи рівномірно, початок зверху
 	<h4>Результат:</h4>
 	<div id="container5" class="flex">
@@ -57,24 +64,30 @@
 		<div id="item2">2</div>
 		<div id="item3">3</div>
 		<div id="item4">4</div>
-	</div><br>
-	<span>align-content: <b>space-around</b></span> - розміщує елементи рівномірно, зверху та внизу контейнера відступ, як половина блоку контенту
+	</div>
+	<br />
+	<span>align-content: <b>space-around</b></span> - розміщує елементи рівномірно, зверху та внизу
+	контейнера відступ, як половина блоку контенту
 	<h4>Результат:</h4>
 	<div id="container6" class="flex">
 		<div id="item1">1</div>
 		<div id="item2">2</div>
 		<div id="item3">3</div>
 		<div id="item4">4</div>
-	</div><br>
-	<span>align-content: <b>space-evenly</b></span> - розміщує елементи рівномірно, всі відступи рівні
+	</div>
+	<br />
+	<span>align-content: <b>space-evenly</b></span> - розміщує елементи рівномірно, всі відступи
+	рівні
 	<h4>Результат:</h4>
 	<div id="container7" class="flex">
 		<div id="item1">1</div>
 		<div id="item2">2</div>
 		<div id="item3">3</div>
 		<div id="item4">4</div>
-	</div><br>
-	<span>align-content: <b>stretch</b></span> - розміщує елементи рівномірно, розтягує елементи до заповнення
+	</div>
+	<br />
+	<span>align-content: <b>stretch</b></span> - розміщує елементи рівномірно, розтягує елементи до
+	заповнення
 	<h4>Результат:</h4>
 	<div id="container8" class="flex">
 		<div id="item1">1</div>
@@ -83,53 +96,74 @@
 		<div id="item4">4</div>
 	</div>
 	<h2>align-items</h2>
-	<span>align-items: <b>flex-start</b></span> - розміщує предмети горизонтально, кожен елемент починається з верху контейнера<br><br>
+	<span>align-items: <b>flex-start</b></span> - розміщує предмети горизонтально, кожен елемент
+	починається з верху контейнера<br /><br />
 	<div class="align-item">
-	<ul class="flex-container flex-start">
-		<li class="flex-item">1<br>2</li>
-		<li class="flex-item">3</li>
-		<li class="flex-item">4<br>5</li>
-		<li class="flex-item">6</li>
-	</ul> </div><br><br><br><br><br><br><br><br>
-<span>align-items: <b>flex-end</b></span> - розміщує предмети горизонтально, кожен елемент починається з верху контейнера<br><br>
-	<div class="align-item"><ul class="flex-container flex-end">
-		<li class="flex-item">1<br>2</li>
-		<li class="flex-item">3</li>
-		<li class="flex-item">4<br>5</li>
-		<li class="flex-item">6</li>
-	</ul></div>
-	<br><br><br><br><br><br><br><br><span>align-items: <b>center</b></span> - розміщує предмети горизонтально, кожен елемент посередині контейнера<br><br>
-	<div class="align-item"><ul class="flex-container center">
-		<li class="flex-item">1<br>2</li>
-		<li class="flex-item">3</li>
-		<li class="flex-item">4<br>5</li>
-		<li class="flex-item">6</li>
-	</ul></div><br><br><br><br><br><br><br><br>
-	<span>align-items: <b>baseline</b></span> - розміщує предмети горизонтально, кожен елемент вирівнюється по лінії вмісту контейнера<br><br>
-	<div class="align-item"><ul class="flex-container baseline">
-		<li class="flex-item">1<br>2</li>
-		<li class="flex-item">3</li>
-		<li class="flex-item">4<br>5</li>
-		<li class="flex-item">6</li>
-	</ul></div><br><br><br><br><br><br><br><br>
-	<span>align-items: <b>stretch</b></span> - заповнює все вільне просторі по вертикалі<br><br>
-	<div class="align-item"><ul class="flex-container stretch">
-		<li class="flex-item">1<br>2</li>
-		<li class="flex-item">3</li>
-		<li class="flex-item">4<br>5</li>
-		<li class="flex-item">6</li>
-	</ul></div><br><br><br><br><br><br><br>
+		<ul class="flex-container flex-start">
+			<li class="flex-item">1<br />2</li>
+			<li class="flex-item">3</li>
+			<li class="flex-item">4<br />5</li>
+			<li class="flex-item">6</li>
+		</ul>
+	</div>
+	<br /><br /><br /><br /><br /><br /><br /><br />
+	<span>align-items: <b>flex-end</b></span> - розміщує предмети горизонтально, кожен елемент
+	починається з верху контейнера<br /><br />
+	<div class="align-item">
+		<ul class="flex-container flex-end">
+			<li class="flex-item">1<br />2</li>
+			<li class="flex-item">3</li>
+			<li class="flex-item">4<br />5</li>
+			<li class="flex-item">6</li>
+		</ul>
+	</div>
+	<br /><br /><br /><br /><br /><br /><br /><br /><span>align-items: <b>center</b></span> -
+	розміщує предмети горизонтально, кожен елемент посередині контейнера<br /><br />
+	<div class="align-item">
+		<ul class="flex-container center">
+			<li class="flex-item">1<br />2</li>
+			<li class="flex-item">3</li>
+			<li class="flex-item">4<br />5</li>
+			<li class="flex-item">6</li>
+		</ul>
+	</div>
+	<br /><br /><br /><br /><br /><br /><br /><br />
+	<span>align-items: <b>baseline</b></span> - розміщує предмети горизонтально, кожен елемент
+	вирівнюється по лінії вмісту контейнера<br /><br />
+	<div class="align-item">
+		<ul class="flex-container baseline">
+			<li class="flex-item">1<br />2</li>
+			<li class="flex-item">3</li>
+			<li class="flex-item">4<br />5</li>
+			<li class="flex-item">6</li>
+		</ul>
+	</div>
+	<br /><br /><br /><br /><br /><br /><br /><br />
+	<span>align-items: <b>stretch</b></span> - заповнює все вільне просторі по вертикалі<br /><br />
+	<div class="align-item">
+		<ul class="flex-container stretch">
+			<li class="flex-item">1<br />2</li>
+			<li class="flex-item">3</li>
+			<li class="flex-item">4<br />5</li>
+			<li class="flex-item">6</li>
+		</ul>
+	</div>
+	<br /><br /><br /><br /><br /><br /><br />
 	<h2>align-self</h2>
-	<span>align-self: <b>flex-start</b></span> - розміщується на початку контейнера по осі Y (1) <br><br>
-	<span>align-self: <b>flex-end</b></span> - розміщується в кінці контейнера по осі Y (2) <br><br>
-	<span>align-self: <b>center</b></span> - розміщується посередині контейнера по осі Y (3) <br><br>
-	<span>align-self: <b>stretch</b></span> - заповнює по осі Y всю довжину контейнера (4) <br><br>
+	<span>align-self: <b>flex-start</b></span> - розміщується на початку контейнера по осі Y (1)
+	<br /><br />
+	<span>align-self: <b>flex-end</b></span> - розміщується в кінці контейнера по осі Y (2)
+	<br /><br />
+	<span>align-self: <b>center</b></span> - розміщується посередині контейнера по осі Y (3)
+	<br /><br />
+	<span>align-self: <b>stretch</b></span> - заповнює по осі Y всю довжину контейнера (4)
+	<br /><br />
 	<ul class="f-c">
 		<li class="flex-item f-s">1</li>
 		<li class="flex-item f-e">2</li>
 		<li class="flex-item ce">3</li>
 		<li class="flex-item str">4</li>
 	</ul>
-
 </body>
+
 </html>
