@@ -560,3 +560,46 @@ scroll-container {
 	color: #000;
 	writing-mode: vertical-rl;
 }
+.trans {
+	border-style: solid;
+	border-width: 1px;
+	display: block;
+	width: 100px;
+	height: 100px;
+	background-color: #0000FF;
+	transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+.transform {
+	width: 100px;
+	height: 100px;
+	background-color: gray;
+	transition: all 1s;
+}
+.transform:active {
+	transform: rotate(180deg);
+}
+
+.trans:active {
+	background-color: #FFCCCC;
+	width: 200px;
+	height: 200px;
+	transform: rotate(180deg);
+}
+.trans-del {
+	transition-delay: 1s;
+}
+.trans-dur {
+	transition-duration: 4s;
+}
+.trans-time-fun {
+	transition-timing-function: cubic-bezier(0.29, -1, 1, 0.29);
+}
+.trans-f {
+	transition: background-color 4s, width 2s, transform 3s ease-in-out 1s;
+}
+.elastic *.hide {
+	display: none;
+}
+mark {
+	background-color: yellow;
+}

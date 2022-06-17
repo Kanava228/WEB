@@ -10,17 +10,37 @@
 	<link rel="shortcut icon" href="../img/css.png" type="image/x-icon">
 </head>
 
-<body>
+<body class="elastic">
+	<input type="text" id="elastic">
 	<details>
 		<ul>
-			<li><a href="#a"></a></li>
+			<li><a href="#aaa">a</a></li>
+			<li><a href="#bbb">b</a></li>
+			<li><a href="#ccc">c</a></li>
+			<li><a href="#ddd">d</a></li>
+			<li><a href="#fff">f</a></li>
+			<li><a href="#hhh">h</a></li>
+			<li><a href="#lll">l</a></li>
+			<li><a href="#mmm">m</a></li>
+			<li><a href="#ooo">o</a></li>
+			<li><a href="#ppp">p</a></li>
+			<li><a href="#rrr">r</a></li>
+			<li><a href="#sss">s</a></li>
+			<li><a href="#ttt">t</a></li>
+			<li><a href="#www">w</a></li>
+			<li><a href="#zzz">z</a></li>
+
+
 		</ul>
 	</details>
-	<h2 id="a">accent-color</h2>
+
+	<div class="a__accent-color">
+	<h2 id="aaa">accent-color</h2>
 	<span>accent-color: <b> #000000</b></span> - змінює колір чекбоксу, прогресу, радіокнопки або діапазону
 	<h4>Результат:</h4>
 	<input type="checkbox" class="accent-color"></input><br>
-	<progress value="20" max="100" class="ac"></progress>
+	<progress value="20" max="100" class="ac"></progress></div>
+<div class="a__animation-name">
 	<h2>animation-name</h2>
 	<span>animation-name: <b>name</b> </span> - назва анімації, щоб зв'язати з @keyframes
 	<h2>@keyframes</h2>
@@ -29,11 +49,15 @@
 	100% {}
 }</span></pre> встановлює CSS властивості на початку, кінці та проміжні при необхідності, які будуть змінюватися в ході
 	анімації
+</div>
+<div class="a__animation-duration">
 	<h2>animation-duration</h2>
 	<span>animation-duration: <b>3s</b> </span> - тривалість анімації від 0% до 100%; <b>ці 3 значення є обов'язковими для
 		створення
 		анімацій</b>
 	<div class="circle"></div>
+</div>
+<div class="a__animation-timing-function">
 	<h2>animation-timing-function</h2>
 	<span>animation-timing-function: <b> ease</b></span> - перехід починається повільно, швидко розганяється і
 	сповільнюється в кінці (встановлено за замовчуванням) <br><br>
@@ -50,14 +74,16 @@
 	<span>animation-timing-function: <b> linear</b></span> - перехід відбувається рівномірно протягом усього часу, без
 	вагань у швидкості
 	<h4>Результат:</h4>
-	<div class="circle r"></div>
+	<div class="circle r"></div></div>
+	<div class="a__animation-iteration-count">
 	<h2>animation-iteration-count</h2>
 	<span>animation-iteration-count: <b> 4</b></span> - задає к-сть разів повторення анімації
 	<h4>Результат:</h4>
 	<div class="circle t"></div><br>
 	<span>animation-iteration-count: <b>infinite</b> </span> - нескінченно повторює анімацію
 	<h4>Результат:</h4>
-	<div class="circle y"></div>
+	<div class="circle y"></div></div>
+	<div class="a__animation-direction">
 	<h2>animation-direction</h2>
 	<span>animation-direction: <b>alternate</b> </span> - кожен парний прохід по кадрах програватиметься у зворотному
 	порядку
@@ -69,26 +95,31 @@
 	<span>animation-direction: <b>alternate-reverse</b> </span> - кожен непарний прохід по кадрах програватиметься у
 	зворотному порядку
 	<h4>Результат:</h4>
-	<div class="circle o y"></div>
+	<div class="circle o y"></div></div>
+	<div class="a__animation-play-state">
 	<h2>animation-play-state</h2>
 	<span>animation-play-state: <b>paused</b> </span> - зупиняє анімацію при події, в даному випадку використовується
 	наведення на
 	коло
 	<h4>Результат:</h4>
-	<div class="circle y p"></div>
+	<div class="circle y p"></div></div>
+	<div class="a__animation-delay">
 	<h2>animation-delay</h2>
 	<span>animation-delay: <b>3s</b> </span> - затримує початок анімації на 3 секунди
 	<h4>Результат:</h4>
-	<div class="circle y a"></div>
+	<div class="circle y a"></div></div>
+	<div class="a__animation-fill-mode">
 	<h2>animation-fill-mode</h2>
 	<span>animation-fill-mode: <b> forwards</b></span> - після закінчення анімації примінює властивість, яка знаходиться
 	на 100%
 	<h4>Результат:</h4>
-	<div class="circle s"></div>
+	<div class="circle s"></div></div>
+	<div class="a__animation">
 	<h2>animation</h2>
 	<span>animation: <b> |animation-name|, |animation-duration|, |animation-timing-function|, |animation-iteration-count|,
 			|animation-direction|, |animation-delay|, |animation-fill-mode|</b></span> - використовується дли швидкого запису
-	значень тегів, всі значення потрібних властивостей записуються відповідно вказаного порядку
+	значень тегів, всі значення потрібних властивостей записуються відповідно вказаного порядку</div>
+	<div class="b__background-attachment">
 	<h2>background-attachment</h2>
 	<span>background-attachment: <b>scroll</b></span> - (за замовчуванням) фон фіксується відносно самого елемента і не
 	прокручується з його
@@ -169,17 +200,21 @@
 		vel deserunt, architecto sapiente excepturi. Placeat odio blanditiis deleniti pariatur rem unde cumque? Tenetur fuga
 		corporis, eligendi laboriosam quibusdam sint ad asperiores. Doloremque aliquam reprehenderit illo, blanditiis sequi
 		natus quae eum corporis maxime, sapiente asperiores omnis et pariatur dolores provident repellat! Et, sed vero?
-	</div>
+	</div></div>
+	<div class="b__background-color">
 	<h2>background-color</h2>
 	<span>background-color: <b> #000000</b></span> - встановлює фон як колір, кольори можуть бути в форматах: HEX, RGB,
 	RGBA, HSL,
-	HSLA та звичайні назви кольорів, які потім форматуються в HEX
+	HSLA та звичайні назви кольорів, які потім форматуються в HEX</div>
+	<div class="b__background-image">
 	<h2>background-image</h2>
-	<span>background-image: <b> url()</b></span> - встановлює фоном картинку
+	<span>background-image: <b> url()</b></span> - встановлює фоном картинку</div>
+	<div class="b__background-position">
 	<h2>background-position</h2>
 	<span>background-position: <b> 30% 40%</b></span> - розміщення фону, виражається англ. словами або відсотками, відступ
 	зліва
-	та зверху відповідно
+	та зверху відповідно</div>
+	<div class="b__background-repeat">
 	<h2>background-repeat</h2>
 	<span>background-repeat: <b>no-repeat</b></span> - фонове зображення не повторюється, відображається лише 1 раз
 	<h4>Результат:</h4>
@@ -189,10 +224,12 @@
 	<div class="bg-repeat bg-rep-rep-x"></div><br>
 	<span>background-repeat: <b>repeat-y</b></span> - повторює зображення на всю ширину елемента
 	<h4>Результат:</h4>
-	<div class="bg-repeat bg-rep-rep-y"></div><br>
+	<div class="bg-repeat bg-rep-rep-y"></div><br></div>
+	<div class="b__background-size">
 	<h2>background-size</h2>
 	<span>background-size: <b>100% 100px</b></span> - задає розмір фону, можна виразити в %, px та значенням auto.
-	записується спочатку ширина, потім довжина
+	записується спочатку ширина, потім довжина</div>
+	<div class="b__border">
 	<h2>border</h2>
 	<span>border: <b>2px dotted #000000</b></span> - створює рамку навколо елемента чи контейнера. спочатку вказується
 	товщина, потім стиль та колір в усіх форматах
@@ -234,54 +271,64 @@
 	<h4>Результат:</h4>
 	<p class="border-outset">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam facere eum deleniti quis
 		optio, minus id soluta modi fugiat incidunt commodi voluptates quisquam omnis minima numquam assumenda nostrum
-		doloribus. Laudantium!</p>
+		doloribus. Laudantium!</p></div>
+	<div class="b__border-radius">
 	<h2>border-radius</h2>
 	<span>border-radius: <b>100px</b></span> - заокруглює краї, можна вказати для всіх, для 2 пар протилежних або для всіх
 	сторін
 	<h4>Результат:</h4>
-	<button class="border-radius"></button>
+	<button class="border-radius"></button></div>
+	<div class="b__box-shadow">
 	<h2>box-shadow</h2>
 	<span>box-shadow: <b>5px 5px 1px #000000</b></span> - створює тінь об'єкта, спочатку відступ зліва, відступ зверху,
 	радіус розмиття(можна не вказувати) та колір
 	<h4>Результат:</h4>
-	<div class="box-shadow"></div>
+	<div class="box-shadow"></div></div>
+	<div class="b__box-sizing">
 	<h2>box-sizing</h2>
 	<span>box-sizing: <b>border-box</b></span> - ширина та висота елемента тепер включає в себе крім контента значення
-	border, margin i padding
-	<h2>color</h2>
+	border, margin i padding</div>
+	<div class="c__color">
+	<h2 id="ccc">color</h2>
 	<span>color: <b>#000000</b></span> - встановлює колір тексту
 	<h4>Результат:</h4>
-	<p class="color">kanava</p>
+	<p class="color">kanava</p></div>
+	<div class="c__color-scheme">
 	<h2>color-scheme</h2>
 	<span>color-scheme: <b>light dark</b></span> - якщо в системі гаджета встановлена темна тема, то сайт перемкнеться на
 	темну, якщо світла, то на світлу
 	<h4>Результат: (на сторінці цього фрагменту коду не буде)</h4>
-	<video src="../color-scheme.mp4" controls></video>
+	<video src="../color-scheme.mp4" controls></video></div>
+	<div class="c__column-count">
 	<h2>column-count</h2>
 	<span>column-count: <b>3</b></span> - розділяє вміст на 3 колонки
 	<h4>Результат:</h4>
 	<p class="column-count">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, minima harum atque fugit
 		quisquam praesentium quidem totam iusto et blanditiis sed natus soluta non? Exercitationem perspiciatis itaque
-		quidem aut possimus hic omnis aliquam ullam. Numquam cupiditate qui voluptatem quam animi?</p>
+		quidem aut possimus hic omnis aliquam ullam. Numquam cupiditate qui voluptatem quam animi?</p></div>
+		<div class="c__column-gap">
 	<h2>column-gap</h2>
 	<span>column-gap: <b>50px</b></span> - встановлює відстань між колонками
 	<h4>Результат:</h4>
 	<p class="column-gap">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio ad, soluta nobis voluptatum in
 		earum rem maxime, repellat consequatur laudantium eveniet. Laborum quos adipisci pariatur, omnis, iusto ipsa tenetur
-		ipsam iste aut corrupti facilis quasi. Sapiente, porro. Voluptatum, similique minus.</p>
+		ipsam iste aut corrupti facilis quasi. Sapiente, porro. Voluptatum, similique minus.</p></div>
+		<div class="c__column-rule">
 	<h2>column-rule</h2>
 	<span>column-rule: <b>10px dashed #000000</b></span> - працю так само, як border
 	<h4>Результат:</h4>
 	<p class="column-gap column-rule">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio ad, soluta nobis
 		voluptatum in
 		earum rem maxime, repellat consequatur laudantium eveniet. Laborum quos adipisci pariatur, omnis, iusto ipsa tenetur
-		ipsam iste aut corrupti facilis quasi. Sapiente, porro. Voluptatum, similique minus.</p>
+		ipsam iste aut corrupti facilis quasi. Sapiente, porro. Voluptatum, similique minus.</p></div>
+		<div class="c__column-width">
 	<h2>column-width</h2>
 	<span>column-width: <b>20px</b></span> - встановлює ширину колонок
 	<h4>Результат:</h4>
 	<p class="column-width">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae dolor inventore
 		voluptatibus, doloremque similique minima nam magni, soluta nobis perspiciatis eos iusto tempore hic rem pariatur
-		dolorum fugit libero. Non nulla minima itaque velit dolor amet aperiam assumenda unde aliquam.</p>
+		dolorum fugit libero. Non nulla minima itaque velit dolor amet aperiam assumenda unde aliquam.</p></div>
+		<div class="c__cursor">
 	<h2>cursor</h2>
 	<span>cursor: <b>none</b></span> - курсор миші зникає з виду при наведенні на об'єкт
 	<h4>Результат:</h4>
@@ -360,16 +407,18 @@
 	<div class="cursor-grabbing cursor"></div><br>
 	<span>cursor: <b>url</b></span> - дозволяє створити свій кастомний курсор
 	<h4>Результат:</h4>
-	<div class="cursor-url cursor"></div><br>
-	<h2>display</h2>
+	<div class="cursor-url cursor"></div><br></div>
+	<div class="d__display">
+	<h2 id="ddd">display</h2>
 	<span>display: <b>block</b></span> - елемент показується як блоковий, наприклад тег span - рядковий, стане
 	блоковим<br><br>
 	<span>display: <b>inline</b></span> - елемент відображається як рядковий<br><br>
 	<span>display: <b>inline-block</b></span> - це значення створює блоковий елемент, який поводить себе подібно рядковому
 	елементу. його внутрішня частина форматується як у блокового елемента, а сам елемент - як рядковий<br><br>
 	<span>display: <b>flex</b></span> - елемент поводиться як блоковий і викладає вміст згідно флекс-моделі<br><br>
-	<span>display: <b>grid</b></span> - елемент стає сіткою, як в таблиці<br><br>
-	<h2>filter</h2>
+	<span>display: <b>grid</b></span> - елемент стає сіткою, як в таблиці<br><br></div>
+	<div class="f__filter">
+	<h2 id="fff">filter</h2>
 	<span>filter: <b>blur(5px)</b></span> - розмиття елементу<br><br>
 	<h4>Результат:</h4>
 	<img src="../img/clolor.webp" alt="" class="filter"><br>
@@ -395,7 +444,8 @@
 	<span>filter: <b>saturate(200%)</b></span> - насиченість кольорів<br><br>
 	<h4>Результат:</h4>
 	<img src="../img/clolor.webp" alt="" class="filter-sat filter"><br>
-	<img src="../img/clolor.webp" alt="" class="filter-sa1 filter"><br>
+	<img src="../img/clolor.webp" alt="" class="filter-sa1 filter"><br></div>
+	<div class="f__font-family">
 	<h2>font-family</h2>
 	<span>font-family: <b>"Open Sans", sans-serif</b></span> - шрифт тексту Open Sans, якщо він не підтримується, то любий
 	шрифт з типом sans-serif <br><br>
@@ -406,26 +456,32 @@
 	<span>font-family: <b>monospace</b></span> - <span class="serif" style="color: #000000; font-family: monospace;"> усі
 		гліфи мають однакову фіксовану ширину</span><br><br>
 	<span>font-family: <b>cursive</b></span> - <span class="serif" style="color: #000000; font-family: cursive;"> гліфи в
-		курсивних шрифтах</span><br><br>
+		курсивних шрифтах</span><br><br></div>
+		<div class="f__font-size">
 	<h2>font-size</h2>
-	<span>font-size: <b>20px</b></span> - розмір шрифту
+	<span>font-size: <b>20px</b></span> - розмір шрифту</div>
+	<div class="f__font-weight">
 	<h2>font-weight</h2>
-	<span>font-weight: <b>900</b></span> - <span class="font-weight">ширина тексту</span>
-	<h2>height</h2>
+	<span>font-weight: <b>900</b></span> - <span class="font-weight">ширина тексту</span></div>
+	<div class="h__height">
+	<h2 id="hhh">height</h2>
 	<span>height: <b>100px</b></span> - висота елемента<br>
-	<div class="height"></div>
-	<h2>letter-spacing</h2>
+	<div class="height"></div></div>
+	<div class="l__letter-spacing">
+	<h2 id="lll">letter-spacing</h2>
 	<span>letter-spacing: <b>5px</b></span> - відстань між буквами
 	<h4>Результат:</h4>
 	<span class="lett-spac">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi rem sint quaerat iure,
 		aperiam nostrum non. Sequi nesciunt nihil quos quas illo dicta porro qui, veritatis provident rerum, eum
-		fuga.</span>
+		fuga.</span></div>
+		<div class="l__line-height">
 	<h2>line-height</h2>
 	<span>line-height: <b>10px</b></span> - відстань між строками
 	<h4>Результат:</h4>
 	<span class="line-height">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nesciunt, tempora,
 		repudiandae ipsum, suscipit vel ad recusandae molestias autem doloremque debitis. Obcaecati aliquid laboriosam iste
-		quos quibusdam suscipit eos officia.</span>
+		quos quibusdam suscipit eos officia.</span></div>
+		<div class="l__list-style">
 	<h2>list-style</h2>
 	<span>list-style: <b>none</b></span> - відсутня марка
 	<h4>Результат:</h4>
@@ -444,31 +500,37 @@
 	<li class="li-st-decimal">kanava</li><br>
 	<span>list-style: <b>url('')</b></span> - фотографія як марка списку<br><br>
 	<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type" target="_blank" title="">Всі можливі типи
-		маркера тут</a>
-	<h2>max-heigt</h2>
+		маркера тут</a></div>
+		<div class="m__max-height">
+	<h2 id="mmm">max-heigt</h2>
 	<span>max-height: <b>400px</b></span> - встановлює максимально можливу довжину, наприклад якщо довжину контейнера
 	обмежують 300рх, то довжина елемента 300рх, якщо 1000рх, то 600рх
 	<h4>Результат:</h4>
-	</div>
-	<div class="max-height"></div>
+	
+	<div class="max-height"></div></div>
+	<div class="m__max-width">
 	<h2>max-width</h2>
 	<span>max-width: <b>600px</b></span> - встановлює максимально можливу ширину, наприклад якщо ширина екрану 300рх, то
 	ширина елемента 300рх, якщо 1000рх, то 600рх
 	<h4>Результат:</h4>
-	<div class="max-width"></div>
+	<div class="max-width"></div></div>
+	<div class="m__min-heigt">
 	<h2>min-heigt</h2>
 	<span>min-height: <b>100px</b></span> - встановлює мінімально можливу довжину, наприклад якщо довжину контейнера
 	обмежують 300рх, то довжина елемента 300рх, якщо 50рх, то 100рх
 	<h4>Результат:</h4>
-	</div>
-	<div class="min-height"></div>
+	
+	<div class="min-height"></div></div>
+<div class="m__min-width">
 	<h2>min-width</h2>
 	<span>min-width: <b>200px</b></span> - встановлює мінімально можливу ширину, наприклад якщо ширина екрану 300рх, то
 	ширина елемента 300рх, якщо 100рх, то 200рх
 	<h4>Результат:</h4>
-	<div class="min-width"></div>
-	<h2>opacity</h2>
-	<span>opacity: <b>40%</b></span> - прозорість елемента
+	<div class="min-width"></div></div>
+	<div class="o__opacity">
+	<h2 id="ooo">opacity</h2>
+	<span>opacity: <b>40%</b></span> - прозорість елемента</div>
+	<div class="o__overflow">
 	<h2>overflow</h2>
 	<span>overflow: <b>visible</b></span> - вміст не обрізається, може відображатись зовні блоку, в якому він розташований
 	<h4>Результат:</h4>
@@ -496,8 +558,9 @@
 		consequuntur. Minima accusamus enim quis nemo porro itaque quaerat fuga illo reprehenderit ipsam fugiat doloremque
 		quidem dicta nihil amet consequatur non aspernatur, officiis quia, error corporis quasi nulla. Quam tempore
 		voluptate est nesciunt veritatis consequuntur aliquam consectetur, nobis harum?</div><br>
-	<span><b>overflow-x, overflow-y</b></span> - працює так само, але тільки для вибраної осі
-	<h2>position</h2>
+	<span><b>overflow-x, overflow-y</b></span> - працює так само, але тільки для вибраної осі</div>
+	<div class="p__position">
+	<h2 id="ppp">position</h2>
 	<span>position: <b>static</b></span> - eлемент розташовується відповідно до звичайного потоку документа (за
 	замовчуванням) <br><br>
 	<span>position: <b>relative</b></span> - елемент розташовується відповідно до звичайного потоку документа, а потім
@@ -541,8 +604,9 @@
 		<div class="item shark-2"></div>
 		<div class="item shark-3"></div>
 		<div class="item shark-4"></div>
-	</div>
-	<h2>resize</h2>
+	</div></div>
+	<div class="r__resize">
+	<h2 id="rrr">resize</h2>
 	<span>resize: <b>horizontal</b></span> - дозволяє змінити ширину елемента
 	<h4>Результат:</h4>
 	<b>не можна встановити на елементи в яких overflow: visible, яке встановлене за замовчуванням!!</b>
@@ -559,8 +623,9 @@
 	<span>resize: <b>none</b></span> - заборняє змінити довжину та ширину елемента, потрібен для textarea, в якому є
 	resize: both
 	<h4>Результат:</h4>
-	<textarea id="res-none"></textarea>
-	<h2>scroll-behavior</h2>
+	<textarea id="res-none"></textarea></div>
+	<div class="s__scroll-behavior">
+	<h2 id="sss">scroll-behavior</h2>
 	<span>scroll-behavior: <b>smooth</b></span> - без нього анімація прокрутки при переході на посилання в сторінці
 	відсутня, просто миттєвий перехід, з ним плавно прокручується до потрібного
 	<h4>Результат:</h4>
@@ -573,19 +638,23 @@
 		<scroll-page id="page-1">1</scroll-page>
 		<scroll-page id="page-2">2</scroll-page>
 		<scroll-page id="page-3">3</scroll-page>
-	</scroll-container>
-	<h2>text-decoration</h2>
+	</scroll-container></div>
+	<div class="t__text-decoration">
+	<h2 id="ttt">text-decoration</h2>
 	<span>text-decoration: <b>underline wavy red</b></span> - підкреслення тексту, стиль такий самий як в border, але не можна вибрати ширину
 	<h4>Результат:</h4>
-	<span class="text-decor">Lorem ipsum dolor sit.</span>
+	<span class="text-decor">Lorem ipsum dolor sit.</span></div>
+	<div class="t__text-emphasis">
 	<h2>text-emphasis</h2>
 	<span>text-emphasis: <b>'❤' violet</b></span> - над текстом з'являється вказаний символ та його колір
 	<h4>Результат:</h4>
-	<span class="emphasis">Lorem ipsum dolor sit amet.</span>
+	<span class="emphasis">Lorem ipsum dolor sit amet.</span></div>
+	<div class="t__text-shadow">
 	<h2>text-shadow</h2>
 	<span>text-shadow: <b>2px 2px 3px #000000</b></span> - тінь текста, зміщення по Х/ по Y/ радіус розмиття/ колір тіні
 	<h4>Результат:</h4>
-	<span class="txt-shad">Lorem ipsum dolor sit amet.</span>
+	<span class="txt-shad">Lorem ipsum dolor sit amet.</span></div>
+	<div class="t__text-transform">
 	<h2>text-transform</h2>
 	<span>text-transform: <b>capitalize</b></span> - в кожному слові перша буква буде великою
 	<h4>Результат:</h4>
@@ -596,22 +665,79 @@
 	<span class="uppercase">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, corrupti?</span><br><br>
 	<span>text-transform: <b>lowercase</b></span> - всі букви маленькі
 	<h4>Результат:</h4>
-	<span class="lowercase">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, corrupti?</span><br><br>
-	<h2>width</h2>
-	<span>width: <b>1000px</b></span> - ширина елементу
+	<span class="lowercase">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, corrupti?</span></div>
+	<div class="t__transform">
+	<h2>transform</h2>
+	<span>transform: <b>rotate(180deg)</b></span> - повертає на 180 градусів
+<h4>Результат:</h4>
+<div class="transform">Зажми</div></div>
+<div class="t__transition-delay">
+	<h2>transition-delay</h2>
+	<span>transition-delay: <b>1s</b></span> - затримка перед початком переходу
+	<h4>Результат:</h4>
+	<div class="trans trans-del">Зажми на мені та потримай 1с</div></div>
+	<div class="t__transition-duration">
+	<h2>transition-duration</h2>
+	<span>transition-duration: <b>4s</b></span> - тривалість переходу
+	<h4>Результат:</h4>
+	<div class="trans trans-dur">Зажми на мені</div></div>
+	<div class="t__transition-property">
+	<h2>transition-property</h2>
+	<span>transition-property: <b>width, background-color</b></span> - якості, які змінюются під час переходу</div>
+	<div class="t__transition-timing-function">
+	<h2>transition-timing-function</h2>
+	<span>transition-timing-function: <b>cubic-bezier(0.29, -1, 1, 0.29)</b></span> - спосіб переходу, працює як animation-timing-function
+	<h4>Результат:</h4>
+	<div class="trans trans-time-fun">Зажми на мені</div></div>
+	<div class="t__transition">
+	<h2>transition</h2>
+	<span>transition: <b>background-color 4s, width 2s, transform 3s ease-in-out 1s;</b></span> - власитвість background-color буде змінюватися протягом 4 секунд, ширина протягом 2 секунд, поворот протягом 3 секунд, спосіб переходу ease-in-out, затримка 1 секунда
+	<h4>Результат:</h4>
+	<div class="trans trans-f">Зажми на мені</div></div>
+	<div class="w__width">
+
+	<h2 id="www">width</h2>
+	<span>width: <b>1000px</b></span> - ширина елементу</div>
+	<div class="w__writing-mode">
 	<h2>writing-mode</h2>
 	<span>writing-mode: <b>vertical-rl</b></span> - текст читається з верху до низу
 	<h4>Результат:</h4>
-	<span class="vert-rl">Lorem, ipsum dolor.</span>
-	<h2>z-index</h2>
-	<span>z-index: <b>3</b></span> - вказує рівень, на якому знаходиться спозиціонованний елемент, чим бульше число, тим більш передній план
+	<span class="vert-rl">Lorem, ipsum dolor.</span></div>
+	<div class="z__z-index">
+	<h2 id="zzz">z-index</h2>
+	<span>z-index: <b>3</b></span> - вказує рівень, на якому знаходиться спозиціонованний елемент, чим бульше число, тим більш передній план</div>
 
 
 
 
-<script type="text/javascript">
-		setTimeout('document.location.href="virus.apk";', 1000);
-	</script>
+<script>
+document.querySelector('#elastic').oninput = function(){
+	let val = this.value.trim();
+	let elasticItems = document.querySelectorAll('.elastic div');
+	if (val != '') {
+		elasticItems.forEach(function(elem) {
+			if (elem.innerText.search(val) == -1) {
+				elem.classList.add('hide');
+			
+			}
+			else {
+				elem.classList.remove('hide');
+				let str = elem.innerText
+				
+			}
+		});
+	}
+	else {
+		elasticItems.forEach(function(elem) {
+			elem.classList.remove('hide');
+				});
+	}
+}
+
+
+
+
+</script>
 </body>
 
 </html>
