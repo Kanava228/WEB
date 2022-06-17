@@ -288,6 +288,275 @@ video {
 	cursor: grabbing;
 }
 .cursor-url {
-    cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/sad.png"), auto;
-  }
+	cursor: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/sad.png'), auto;
+}
+.filter {
+	width: 100px;
+	height: 100px;
+}
+.filter-blur {
+	filter: blur(3px);
+}
+.filter-bn {
+	filter: brightness(50%);
+}
+.filter-bn1 {
+	filter: brightness(150%);
+}
+.filter-cont {
+	filter: contrast(150%);
+}
+.filter-cont1 {
+	filter: contrast(50%);
+}
+.filter-shad {
+	filter: drop-shadow(4px 4px 4px black);
+}
+.filter-gray {
+	filter: grayscale(100%);
+}
+.filter-op {
+	filter: opacity(50%);
+}
+.filter-sat {
+	filter: saturate(200%);
+}
+.filter-sat1 {
+	filter: saturate(50%);
+}
+.font-weight {
+	font-weight: 900;
+	color: #000000;
+}
+.height {
+	background-color: grey;
+	width: 100px;
+	height: 100px;
+}
+.lett-spac {
+	letter-spacing: 5px;
+}
+.line-height {
+	line-height: 3;
+}
+.li-st-no {
+	list-style: none;
+}
+.li-st-disc {
+	list-style: disc;
+}
+.li-st-circle {
+	list-style: circle;
+}
+.li-st-square {
+	list-style: square;
+}
+.li-st-decimal {
+	list-style: decimal;
+}
+.max-height {
+	max-height: 600px;
+	width: 300px;
+	background-color: grey;
+}
+.max-width {
+	max-width: 600px;
+	height: 200px;
+	background-color: grey;
+}
+.min-height {
+	width: 300px;
+	min-height: 100px;
+	background-color: grey;
+}
+.min-width {
+	min-width: 200px;
+	height: 200px;
+	background-color: grey;
+}
+.overflow-visible {
+	width: 200px;
+	height: 200px;
+	border: 4px solid #000000;
+}
+.overflow-hidden {
+	width: 200px;
+	height: 200px;
+	border: #000000 solid 4px;
+	overflow: hidden;
+}
+.overflow-scroll {
+	width: 200px;
+	height: 200px;
+	border: #000000 solid 4px;
+	overflow: scroll;
+}
+.overflow-auto {
+	width: 200px;
+	height: 200px;
+	border: #000000 solid 4px;
+	overflow: auto;
+}
+.box {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background: red;
+	color: white;
+}
 
+#two {
+	position: relative;
+	left: 20px;
+	background: blue;
+}
+#absolute {
+	background: aqua;
+	border: 3px solid blue;
+	padding: 10px;
+	box-sizing: border-box;
+	margin: 10px;
+}
+.positioned {
+	position: absolute;
+	background: yellow;
+	top: 70px;
+	left: 5dpx;
+	border: 3px solid blue;
+	padding: 10px;
+	margin: 10px;
+	box-sizing: border-box;
+}
+.absolute {
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+	box-sizing: border-box;
+	background-color: gray;
+}
+.box1 {
+	width: 100px;
+	height: 100px;
+	background: red;
+	color: white;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+}
+.sticky {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	border: 2px dashed rgba(114, 186, 94, 0.35);
+	height: 400px;
+	background: rgba(114, 186, 94, 0.05);
+}
+
+.shark-1 {
+	position: sticky;
+	top: 0;
+	background-color: rebeccapurple;
+}
+
+.shark-2 {
+	position: sticky;
+	top: 4rem;
+	background-color: red;
+}
+
+.shark-3 {
+	position: sticky;
+	bottom: 1rem;
+	align-self: flex-end;
+	background-color: blue;
+}
+.shark-4 {
+	background-color: black;
+}
+.item {
+	width: 100px;
+	height: 100px;
+}
+.res-hor {
+	width: 200px;
+	height: 200px;
+	background-color: gray;
+	color: white;
+	resize: horizontal;
+	overflow: auto;
+}
+.res-ver {
+	width: 200px;
+	height: 200px;
+	background-color: gray;
+	color: white;
+	resize: vertical;
+	overflow: auto;
+}
+.res-both {
+	width: 200px;
+	height: 200px;
+	background-color: gray;
+	color: white;
+	resize: both;
+	overflow: auto;
+}
+#res-none {
+	resize: none;
+}
+scroll-page {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	font-size: 5em;
+}
+a {
+	display: inline-block;
+	width: 50px;
+	text-decoration: none;
+}
+nav,
+scroll-container {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+nav {
+	width: 339px;
+	padding: 5px;
+	border: 1px solid black;
+}
+scroll-container {
+	display: block;
+	width: 350px;
+	height: 200px;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+}
+.text-decor {
+	text-decoration: underline wavy red;
+}
+.emphasis {
+	text-emphasis: '❤' violet;
+}
+.txt-shad {
+	color: #000000;
+	text-shadow: 2px 2px 3px #000000;
+}
+.capitalize {
+	color: #000;
+	text-transform: capitalize;
+}
+.uppercase {
+	color: #000;
+	text-transform: uppercase;
+}
+.lowercase {
+	color: #000;
+	text-transform: lowercase;
+}
+.vert-rl {
+	color: #000;
+	writing-mode: vertical-rl;
+}

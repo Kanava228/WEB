@@ -200,3 +200,21 @@ div > div {
 .str {
 	align-self: stretch;
 }
+#container1 {
+	height: 200px;
+	width: 200px;
+	background-color: #8c8c8c;
+	padding: 10px;
+	margin: 50px;
+	border: 2px solid #000;
+}
+.padding {
+	height: auto;
+	width: 50px;
+	background-color: #8c8c8c;
+	padding: 30px;
+	text-align: center;
+	align-self: center;
+	border: 2px solid #000;
+}
+
