@@ -1,3 +1,7 @@
+:root {
+	--first-color: #8261ca;
+}
+
 body {
 	font-family: 'Open Sans', sans-serif;
 }
@@ -18,14 +22,14 @@ h2 {
 	accent-color: rgb(234, 92, 26);
 }
 
-.circle {
+.animate {
 	width: 70px;
 	height: 70px;
 	border-radius: 50%;
 	background-color: #000000;
 	margin-top: 20px;
 	position: relative;
-	animation-name: circle;
+	animation-name: animate;
 	animation-duration: 3s;
 }
 
@@ -34,7 +38,7 @@ pre {
 	font-family: 'Open Sans', sans-serif;
 }
 
-@keyframes circle {
+@keyframes animate {
 	0% {
 		border-radius: 100%;
 		left: 0;
@@ -51,51 +55,51 @@ pre {
 	}
 }
 
-.q {
+.ani-ti-fun-ease-in {
 	animation-timing-function: ease-in;
 }
 
-.w {
+.ani-ti-fun-ease-out {
 	animation-timing-function: ease-out;
 }
 
-.e {
+.ani-ti-fun-ease-in-out {
 	animation-timing-function: ease-in-out;
 }
 
-.r {
+.ani-ti-fun-linear {
 	animation-timing-function: linear;
 }
 
-.t {
+.ani-it-co {
 	animation-iteration-count: 4;
 }
 
-.y {
+.ani-it-co-inf {
 	animation-iteration-count: infinite;
 }
 
-.u {
+.ani-dire-alt {
 	animation-direction: alternate;
 }
 
-.i {
+.ani-dire-rev {
 	animation-direction: reverse;
 }
 
-.o {
+.ani-dire-alt-rev {
 	animation-direction: alternate-reverse;
 }
 
-.p:hover {
+.ani-play-state-p:hover {
 	animation-play-state: paused;
 }
 
-.a {
+.ani-del-3 {
 	animation-delay: 3s;
 }
 
-.s {
+.ani-fill-m-f {
 	animation-fill-mode: forwards;
 }
 
@@ -397,7 +401,7 @@ video {
 	border: #000000 solid 4px;
 	overflow: auto;
 }
-.box {
+.pos-rel {
 	display: inline-block;
 	width: 100px;
 	height: 100px;
@@ -405,7 +409,7 @@ video {
 	color: white;
 }
 
-#two {
+#pos-rel2 {
 	position: relative;
 	left: 20px;
 	background: blue;
@@ -473,7 +477,7 @@ video {
 .shark-4 {
 	background-color: black;
 }
-.item {
+.pos-sti {
 	width: 100px;
 	height: 100px;
 }
@@ -566,7 +570,7 @@ scroll-container {
 	display: block;
 	width: 100px;
 	height: 100px;
-	background-color: #0000FF;
+	background-color: #0000ff;
 	transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 .transform {
@@ -580,7 +584,7 @@ scroll-container {
 }
 
 .trans:active {
-	background-color: #FFCCCC;
+	background-color: #ffcccc;
 	width: 200px;
 	height: 200px;
 	transform: rotate(180deg);
@@ -600,6 +604,107 @@ scroll-container {
 .elastic *.hide {
 	display: none;
 }
-mark {
+.var {
+	color: var(--first-color);
+}
+.active:active {
+	background-color: red;
+}
+.checked:checked + label {
+	color: #8261ca;
+}
+input:default {
+	box-shadow: 0 0 2px 1px coral;
+}
+
+.pseudo-classes input:default + label {
+	color: coral;
+}
+input:disabled {
 	background-color: yellow;
+}
+.focus:focus {
+	color: blue;
+}
+.hover:hover {
+	border: 5px solid orangered;
+}
+.in-out-range:in-range {
+	background-color: rgba(0, 255, 0, 0.25);
+}
+.in-out-range:out-of-range {
+	background-color: rgba(255, 0, 0, 0.25);
+}
+.invalid:invalid {
+	background-color: rgba(255, 0, 0, 0.25);
+}
+.invalid:valid {
+	background-color: rgba(0, 255, 0, 0.25);
+}
+:target {
+	background-color: yellow;
+}
+.target-a {
+	width: 100%;
+}
+#visited {
+	width: 100%;
+}
+#visited:visited {
+	font-size: 200%;
+	color: red;
+	width: 100%;
+}
+.after {
+	font-size: 120%;
+	font-weight: bold;
+	color: #000;
+}
+.after:active::after {
+	content: ' цей текст видимий за допомогою ::after';
+	color: green;
+}
+.before {
+	text-decoration: none;
+	border: 2px solid #764abc;
+	color: #764abc;
+	padding: 10px 20px;
+	border-radius: 25px;
+	position: relative;
+	transition: all 1s;
+	overflow: hidden;
+}
+
+.before::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #764abc;
+	transition: all 1s;
+	z-index: -1;
+	transform: translateX(-100%);
+}
+
+.before:hover::before {
+	transform: translateX(0);
+}
+.before:hover {
+	color: #fff;
+}
+.first-letter::first-letter {
+	font-size: 120%;
+	color: yellowgreen;
+	font-weight: bold;
+}
+.first-line::first-line {
+	text-transform: uppercase;
+	color: blue;
+	font-weight: bold;
+}
+.selection::selection {
+	background-color: orange;
+	color: greenyellow;
 }

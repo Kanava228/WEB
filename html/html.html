@@ -7,12 +7,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>HTML</title>
 	<link rel="stylesheet" href="../css/html.css">
-	<link rel="shortcut icon"
-		href="../img/html.png"
-		type="image/x-icon">
+	<link rel="shortcut icon" href="../img/html.png" type="image/x-icon">
 </head>
 
-<body>
+<body class="elastic">
+	<input type="text" id="elastic">
+
 	<nav><b> <big>
 				<details>
 					<ul>
@@ -32,393 +32,528 @@
 						<li><a href="#s">s</a></li>
 						<li><a href="#t">t</a></li>
 						<li><a href="#u">u</a></li>
+						<li><a href="#v">v</a></li>
 					</ul>
 				</details>
 			</big></b></nav>
-	<h2 id="a">&lt;a&gt;</h2>
-	<ol>
-		<li>
-			<span>&lt;a <b>href</b>="https://kanava228.github.io/putinhuylo/"&gt;Текст&lt;/a&gt;</span> - при натисканні на Текст
-			переходить за вказаним посиланням
-			<h4>Результат:</h4>
-			<p><a href="https://kanava228.github.io/putinhuylo/">Текст</a></p>
-		</li>
-		<li>
-			<span>&lt;a <b>download=""
-				</b>href="https://doctor-veterinar.ru/media/k2/items/cache/675d28c04794e3c683f4419536c4c15f_L.jpg"&gt;Текст&lt;/a&gt;</span>
-			- завантажує файл, який йде посилання. Якщо це звичайний сайт, нічого не станеться
-			<h4>Результат:</h4>
-			<p><a href="kot.jpg" download="">Текст</a></p>
-		</li>
-		<li>
-			<span>&lt;a <b>rel="" </b>href=""&gt;Текст&lt;/a&gt;</span> - вказує на відносини між посиланням та документом.
-			Потрібен лише для орієнтації на сторінці, з посиланням нічого не робить. Наприклад: rel="me" посилання на особистий профіль
-			(<a href="https://wiki.whatwg.org/wiki/RelExtensions">Тут список усіх rel</a> )
-			<h4>Результат:</h4>
-			<p><a rel="" href="https://kanava228.github.io/putinhuylo/">Текст</a></p>
-		<li>
-			<span>&lt;a <b> target=""</b> href=""&gt;&lt;/a&gt;</span> - потрібний, щоб встановити як саме потрібно відкрити
-			посилання
-			<ul>
-				<li><span>&lt;a <b>target="_blank" </b> href=""&gt;Текст&lt;/a&gt;</span> - завантажує сторінку у нове вікно
-					браузера</li>
-				<li><span>&lt;a <b> target="_self"</b> href=""&gt;Текст&lt;/a&gt;</span> - завантажує сторінку у поточне вікно
-				</li>
-				<li><span>&lt;a <b> target="_parent"</b> href=""&gt;Текст&lt;/a&gt;</span> - завантажує сторінку в
-					фрейм-батько, якщо фреймів немає, це значення працює як _self</li>
-				<li><span>&lt;a <b> target="_top"</b> href=""&gt;Текст&lt;/a&gt;</span> - 
-					скасовує всі кадри та завантажує
-					сторінку у повному вікні браузера, якщо фреймів немає, це значення працює як _self</li>
-			</ul>
-			<h4>Результат:</h4>
-			<p>
-			<ul>
-				<li>
-					<p><a target="_blank" href="https://kanava228.github.io/putinhuylo">Текст</a></p>
-				</li>
-				<li>
-					<p><a target="_self" href="https://kanava228.github.io/putinhuylo">Текст</a></p>
-				</li>
-				<li>
-					<p><a target="_parent" href="https://kanava228.github.io/putinhuylo">Текст</a></p>
-				</li>
-				<li>
-					<p><a target="_top" href="https://kanava228.github.io/putinhuylo">Текст</a></p>
-				</li>
-			</ul>
-			</p>
-		</li>
-		</li>
-		<li>
-			<span>&lt;a <b>title="канава"</b> href=""&gt;Текст&lt;/a&gt;</span> - при наведенні мишкою на посилання з'явиться
-			підказка
-			<h4>Результат:</h4>
-			<p><a title="канава" href="https://kanava228.github.io/putinhuylo">Текст</a></p>
-		</li>
-	</ol>
-	<h2>&lt;abbr&gt;</h2>
-	<span>&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;</span> - позначає текст як абревіатура та
-	додає підказку при наведенні
-	<h4>Результат:</h4>
-	<p><abbr title="HyperText Markup Language">HTML</abbr></p>
-	<h2>&lt;article&gt;</h2>
-	<span>&lt;article&gt;</span> - задає зміст сайту на кшталт новини, статті, записи блогу, форуму або ін.
-	симантики <br>.... <br><span>&lt;/article&gt;</span>
-	<h2>&lt;aside&gt;</h2>
-	<span>&lt;aside&gt;</span> - визначає блок збоку від контенту для розміщення рубрик, посилань на архів, міток та іншої
-	інформації<br>.... <br>
-	<span>&lt;/aside&gt;</span>
-	<h2>&lt;audio&gt;</h2>
-	<ol>
-		<li>
-			<span>&lt;audio <b>controls src=""</b> &gt;&lt;/audio&gt;</span> - 
-			додає, відтворює та керує
-			налаштуваннями аудіозапису на веб-сторінці. controls дозволяє управляти відтворенням треку
-			<h4>Результат:</h4>
-			<audio controls src="../vesna.m4a">Ваш браузер не підтримує цей тег або цей формат</audio>
-		</li>
-		<li>
-			<span>&lt;audio <b>autoplay </b>controls src="" &gt;&lt;/audio&gt;</span> - аудіо починає відтворюватися
-			автоматично після завантаження сторінки
-			<h4>Результат:</h4>
-			<p>Прикладу не буде</p>
-			<p></p>
-		</li>
-		<li>
-			<span>&lt;audio <b> loop</b> src=""&gt;&lt;/audio&gt;</span> - повторює відтворення звуку з початку його
-			завершення
-			<h4>Результат:</h4>
-			<p><audio controls loop src="../vesna.m4a">Ваш браузер не підтримує цей тег або цей формат</audio></p>
-		</li>
-		<li>
-			<span>&lt;audio <b> preload="auto"</b> src=""&gt;&lt;/audio&gt;</span> - використовується для завантаження аудіофайлу
-			разом із завантаженням веб-сторінки
-			<h4>Результат:</h4>
-			<audio preload="auto" controls src="../vesna.m4a">Ваш браузер не підтримує цей тег або цей формат</audio>
-		</li>
-	</ol>
-	<h2 id="b">&lt;b&gt;</h2>
-	<span>&lt;b&gt;Текст&lt;/b&gt;</span> - робить текст жирним усередині тега
-	<h4>Результат:</h4>
-	<b>Текст</b>
-	<h2>&lt;blockquote&gt;</h2>
-	<span>&lt;blockquote&gt;Текст&lt;/blockquote&gt;</span> - для виділення довгих цитат усередині документа
-	<h4>Результат:</h4>
-	<blockquote>Текст</blockquote>
-	<h2>&lt;big&gt;</h2>
-	<span>&lt;big&gt;Текст&lt;/big&gt;</span> - збільшує текст
-	<h4>Результат:</h4>
-	Текст <big>Текст</big>
-	<h2>&lt;br&gt;</h2>
-	<span>Текст&lt;br&gt;Текст</span> - робить перенесення рядка
-	<h4>Результат:</h4>
-	<p>Текст <br> Текст</p>
-	<h2>&lt;button&gt;</h2>
-	<span>&lt;button&gt;Текст&lt;/button&gt;</span> - створює кнопку
-	<h4>Результат:</h4>
-	<button>Текст</button>
-	<h2 id="c">&lt;canvas&gt;</h2>
-	<span>&lt;canvas&gt;...&lt;/canvas&gt;</span> - за допомогою JS можна малювати фігури, картинки та створювати ігри<br>
-	Результату не буде
-	<h2 id="d">&lt;dl&gt;</h2>
-	<span>&lt;dl&gt; <br>&nbsp; &lt;dt&gt;Текст&lt;/dt&gt; <br>&nbsp;&nbsp;&nbsp; &lt;dd&gt;дужедужедужедуже багато
-		текста&lt;/dd&gt; <br>&lt;/dl&gt;</span> - потрібно для термінів, dt записують термін, а dd його значення
-	<h4>Результат:</h4>
-	<dl>
-		<dt>Текст</dt>
-		<dd>дужедужедужедуже багато
-			текста</dd>
-	</dl>
-
-	<h2>&lt;del&gt;</h2>
-	<span>&lt;del&gt;Текст&lt;/del&gt;</span> - потрібний для відображення тексту, який видалили в оновленні
-	<h4>Результат:</h4>
-	<del>Текст</del>
-	<h2>&lt;details&gt;</h2>
-	<span>&lt;details&gt;дужедужедужедуже багато
-		текста&lt;/details&gt;</span> - дозволяє приховати чи відкрити
-		відомості
-	<h4>Результат:</h4>
-	<details>дужедужедужедуже багато
-		текста</details>
-	<span>&lt;details<b> open</b>&gt;дужедужедужедуже багато
-		текста&lt;/details&gt;</span> - під час завантаження сайту
-		відомості вже відкриті
-	<h4>Результат:</h4>
-	<details open>дужедужедужедуже багато
-		текста</details>
-	<h2>&lt;div&gt;</h2>
-	<span>&lt;div&gt;<br> ... <br>&lt;/div&gt;</span> - використовується для групування елементів
-	<h2 id="e">&lt;em&gt;</h2>
-	<span>&lt;em&gt;Текст&lt;/em&gt;</span> - виділяє текст, який потрібно звернути увагу курсивом
-	<h4>Результат:</h4>
-	<em>Текст</em>
-	<h2>&lt;embed&gt;</h2>
-	<span>&lt;embed src=""&gt;</span> - використовується для завантаження та відображення об'єктів
-	<h4>Результат:</h4>
-	<br>
-	<embed width="400px" height="300px" src="https://www.youtube.com/embed/TTAbXRL7w0E" type="">
-	<h2 id="f">&lt;figure&gt;</h2>
-	<span>&lt;figure&gt;...&lt;/figure&gt;</span> - для групування будь-яких елементів, в основному картинка та підпис до неї
-	<br><br><span>&lt;figure&gt;
-		<br> <b>&lt;figcaption&gt;Текст&lt;/figcaption&gt;</b></span> - опис до figure <br>
-	<span>&lt;/figure&gt;</span>
-	<h2>&lt;form&gt;</h2>
-	<span>&lt;form action=""&gt;...&lt;/form&gt;</span> - створює форму на сторінці, action - шлях до файлу, який
-	обробляє дані<br>
-	<span>&lt;form <b>autocomplete="on"</b>&gt;&lt;/form&gt;</span> - додає можливість автоматично заповнити форму,
-	тобто дані, що колись вводилися в поле
-	<form action="">
-		<h3>&lt;fieldset&gt;</h3>
-		<span>&lt;fieldset&gt;&lt;legend&gt;...&lt;/legend&gt;&lt;/fieldset&gt;</span> -об'єднання полів, в legend
-		записують початок для об'єднання
+	<div class="a__a">
+		<h2 id="a">&lt;a&gt;</h2>
+		<ol>
+			<li>
+				<span>&lt;a <b>href</b>="https://kanava228.github.io/putinhuylo/"&gt;Текст&lt;/a&gt;</span> - при натисканні на
+				Текст
+				переходить за вказаним посиланням
+				<h4>Результат:</h4>
+				<p><a href="https://kanava228.github.io/putinhuylo/">Текст</a></p>
+			</li>
+			<li>
+				<span>&lt;a <b>download=""
+					</b>href="https://doctor-veterinar.ru/media/k2/items/cache/675d28c04794e3c683f4419536c4c15f_L.jpg"&gt;Текст&lt;/a&gt;</span>
+				- завантажує файл, який йде посилання. Якщо це звичайний сайт, нічого не станеться
+				<h4>Результат:</h4>
+				<p><a href="kot.jpg" download="">Текст</a></p>
+			</li>
+			<li>
+				<span>&lt;a <b>rel="" </b>href=""&gt;Текст&lt;/a&gt;</span> - вказує на відносини між посиланням та документом.
+				Потрібен лише для орієнтації на сторінці, з посиланням нічого не робить. Наприклад: rel="me" посилання на
+				особистий профіль
+				(<a href="https://wiki.whatwg.org/wiki/RelExtensions">Тут список усіх rel</a> )
+				<h4>Результат:</h4>
+				<p><a rel="" href="https://kanava228.github.io/putinhuylo/">Текст</a></p>
+			<li>
+				<span>&lt;a <b> target=""</b> href=""&gt;&lt;/a&gt;</span> - потрібний, щоб встановити як саме потрібно відкрити
+				посилання
+				<ul>
+					<li><span>&lt;a <b>target="_blank" </b> href=""&gt;Текст&lt;/a&gt;</span> - завантажує сторінку у нове вікно
+						браузера</li>
+					<li><span>&lt;a <b> target="_self"</b> href=""&gt;Текст&lt;/a&gt;</span> - завантажує сторінку у поточне вікно
+					</li>
+					<li><span>&lt;a <b> target="_parent"</b> href=""&gt;Текст&lt;/a&gt;</span> - завантажує сторінку в
+						фрейм-батько, якщо фреймів немає, це значення працює як _self</li>
+					<li><span>&lt;a <b> target="_top"</b> href=""&gt;Текст&lt;/a&gt;</span> -
+						скасовує всі кадри та завантажує
+						сторінку у повному вікні браузера, якщо фреймів немає, це значення працює як _self</li>
+				</ul>
+				<h4>Результат:</h4>
+				<p>
+				<ul>
+					<li>
+						<p><a target="_blank" href="https://kanava228.github.io/putinhuylo">Текст</a></p>
+					</li>
+					<li>
+						<p><a target="_self" href="https://kanava228.github.io/putinhuylo">Текст</a></p>
+					</li>
+					<li>
+						<p><a target="_parent" href="https://kanava228.github.io/putinhuylo">Текст</a></p>
+					</li>
+					<li>
+						<p><a target="_top" href="https://kanava228.github.io/putinhuylo">Текст</a></p>
+					</li>
+				</ul>
+				</p>
+			</li>
+			</li>
+			<li>
+				<span>&lt;a <b>title="канава"</b> href=""&gt;Текст&lt;/a&gt;</span> - при наведенні мишкою на посилання
+				з'явиться
+				підказка
+				<h4>Результат:</h4>
+				<p><a title="канава" href="https://kanava228.github.io/putinhuylo">Текст</a></p>
+			</li>
+		</ol>
+	</div>
+	<div class="a__abbr">
+		<h2>&lt;abbr&gt;</h2>
+		<span>&lt;abbr <b>title="HyperText Markup Language"</b>&gt;HTML&lt;/abbr&gt;</span> - позначає текст як абревіатура та
+		додає підказку при наведенні
 		<h4>Результат:</h4>
-		<fieldset>
-			<br>
-			<legend>
-				<h3>&lt;textarea&gt;</h3>
-			</legend>
-			<span>&lt;textarea&gt;&lt;/textarea&gt;</span> -поле для великої кількості тексту з можливістю переносити
-			рядки
+		<p><abbr title="HyperText Markup Language">HTML</abbr></p>
+	</div>
+	<div class="a__article">
+		<h2>&lt;article&gt;</h2>
+		<span>&lt;article&gt;</span> - задає зміст сайту на кшталт новини, статті, записи блогу, форуму або ін.
+		симантики <br>.... <br><span>&lt;/article&gt;</span>
+	</div>
+	<div class="a__aside">
+		<h2>&lt;aside&gt;</h2>
+		<span>&lt;aside&gt;</span> - визначає блок збоку від контенту для розміщення рубрик, посилань на архів, міток та
+		іншої
+		інформації<br>.... <br>
+		<span>&lt;/aside&gt;</span>
+	</div>
+	<div class="a__audio">
+		<h2>&lt;audio&gt;</h2>
+		<ol>
+			<li>
+				<span>&lt;audio <b>controls src=""</b> &gt;&lt;/audio&gt;</span> -
+				додає, відтворює та керує
+				налаштуваннями аудіозапису на веб-сторінці. controls дозволяє управляти відтворенням треку
+				<h4>Результат:</h4>
+				<audio controls src="../vesna.m4a">Ваш браузер не підтримує цей тег або цей формат</audio>
+			</li>
+			<li>
+				<span>&lt;audio <b>autoplay </b>controls src="" &gt;&lt;/audio&gt;</span> - аудіо починає відтворюватися
+				автоматично після завантаження сторінки
+				<h4>Результат:</h4>
+				<p>Прикладу не буде</p>
+				<p></p>
+			</li>
+			<li>
+				<span>&lt;audio <b> loop</b> src=""&gt;&lt;/audio&gt;</span> - повторює відтворення звуку з початку його
+				завершення
+				<h4>Результат:</h4>
+				<p><audio controls loop src="../vesna.m4a">Ваш браузер не підтримує цей тег або цей формат</audio></p>
+			</li>
+			<li>
+				<span>&lt;audio <b> preload="auto"</b> src=""&gt;&lt;/audio&gt;</span> - використовується для завантаження
+				аудіофайлу
+				разом із завантаженням веб-сторінки
+				<h4>Результат:</h4>
+				<audio preload="auto" controls src="../vesna.m4a">Ваш браузер не підтримує цей тег або цей формат</audio>
+			</li>
+		</ol>
+	</div>
+	<div class="b__b">
+		<h2 id="b">&lt;b&gt;</h2>
+		<span>&lt;b&gt;Текст&lt;/b&gt;</span> - робить текст жирним усередині тега
+		<h4>Результат:</h4>
+		<b>Текст</b>
+	</div>
+	<div class="b__blockquote">
+		<h2>&lt;blockquote&gt;</h2>
+		<span>&lt;blockquote&gt;Текст&lt;/blockquote&gt;</span> - для виділення довгих цитат усередині документа
+		<h4>Результат:</h4>
+		<blockquote>Текст</blockquote>
+	</div>
+	<div class="b__big">
+		<h2>&lt;big&gt;</h2>
+		<span>&lt;big&gt;Текст&lt;/big&gt;</span> - збільшує текст
+		<h4>Результат:</h4>
+		Текст <big>Текст</big>
+	</div>
+	<div class="b__br">
+		<h2>&lt;br&gt;</h2>
+		<span>Текст&lt;br&gt;Текст</span> - робить перенесення рядка
+		<h4>Результат:</h4>
+		<p>Текст <br> Текст</p>
+	</div>
+	<div class="b__button">
+		<h2>&lt;button&gt;</h2>
+		<span>&lt;button&gt;Текст&lt;/button&gt;</span> - створює кнопку
+		<h4>Результат:</h4>
+		<button>Текст</button>
+	</div>
+	<div class="c__canvas">
+		<h2 id="c">&lt;canvas&gt;</h2>
+		<span>&lt;canvas&gt;...&lt;/canvas&gt;</span> - за допомогою JS можна малювати фігури, картинки та створювати
+		ігри<br>
+		Результату не буде
+	</div>
+	<div class="d__dl-dd-dt">
+		<h2 id="d">&lt;dl&gt;</h2>
+		<span>&lt;dl&gt; <br>&nbsp; &lt;dt&gt;Текст&lt;/dt&gt; <br>&nbsp;&nbsp;&nbsp; &lt;dd&gt;дужедужедужедуже багато
+			текста&lt;/dd&gt; <br>&lt;/dl&gt;</span> - потрібно для термінів, dt записують термін, а dd його значення
+		<h4>Результат:</h4>
+		<dl>
+			<dt>Текст</dt>
+			<dd>дужедужедужедуже багато
+				текста</dd>
+		</dl>
+	</div>
+	<div class="d__del">
+		<h2>&lt;del&gt;</h2>
+		<span>&lt;del&gt;Текст&lt;/del&gt;</span> - потрібний для відображення тексту, який видалили в оновленні
+		<h4>Результат:</h4>
+		<del>Текст</del>
+	</div>
+	<div class="d__details">
+		<h2>&lt;details&gt;</h2>
+		<span>&lt;details&gt;дужедужедужедуже багато
+			текста&lt;/details&gt;</span> - дозволяє приховати чи відкрити
+		відомості
+		<h4>Результат:</h4>
+		<details>дужедужедужедуже багато
+			текста</details>
+		<span>&lt;details<b> open</b>&gt;дужедужедужедуже багато
+			текста&lt;/details&gt;</span> - під час завантаження сайту
+		відомості вже відкриті
+		<h4>Результат:</h4>
+		<details open>дужедужедужедуже багато
+			текста</details>
+	</div>
+	<div class="d__div">
+		<h2>&lt;div&gt;</h2>
+		<span>&lt;div&gt;<br> ... <br>&lt;/div&gt;</span> - використовується для групування елементів
+	</div>
+	<div class="e__em">
+		<h2 id="e">&lt;em&gt;</h2>
+		<span>&lt;em&gt;Текст&lt;/em&gt;</span> - виділяє текст, який потрібно звернути увагу курсивом
+		<h4>Результат:</h4>
+		<em>Текст</em>
+	</div>
+	<div class="e__embed">
+		<h2>&lt;embed&gt;</h2>
+		<span>&lt;embed src=""&gt;</span> - використовується для завантаження та відображення об'єктів
+		<h4>Результат:</h4>
+		<br>
+		<embed width="400px" height="300px" src="https://www.youtube.com/embed/TTAbXRL7w0E" type="">
+	</div>
+	<div class="f__figure-figcaption">
+		<h2 id="f">&lt;figure&gt;</h2>
+		<span>&lt;figure&gt;...&lt;/figure&gt;</span> - для групування будь-яких елементів, в основному картинка та підпис
+		до неї
+		<br><br><span>&lt;figure&gt;
+			<br> <b>&lt;figcaption&gt;Текст&lt;/figcaption&gt;</b></span> - опис до figure <br>
+		<span>&lt;/figure&gt;</span>
+	</div>
+	<div class="f__form-fieldset-input-textarea">
+		<h2>&lt;form&gt;</h2>
+		<span>&lt;form action=""&gt;...&lt;/form&gt;</span> - створює форму на сторінці, action - шлях до файлу, який
+		обробляє дані<br>
+		<span>&lt;form <b>autocomplete="on"</b>&gt;&lt;/form&gt;</span> - додає можливість автоматично заповнити форму,
+		тобто дані, що колись вводилися в поле
+		<form action="">
+			<h3>&lt;fieldset&gt;</h3>
+			<span>&lt;fieldset&gt;&lt;legend&gt;...&lt;/legend&gt;&lt;/fieldset&gt;</span> -об'єднання полів, в legend
+			записують початок для об'єднання
 			<h4>Результат:</h4>
-			<textarea></textarea>
-			<h3>&lt;input&gt;</h3>
-			<span>&lt;form action=""&gt;&lt;input type="text"&gt;&lt;/form&gt;</span> - створює поле для введення інформації в
-			форму<br>
-			<span>&lt;input <b>autocomplete="on"</b> &gt;</span> - включає автозаповнення
-			<h4>Результат:</h4>
-			<input autocomplete="on" type="text"> <br><br>
-			<span>&lt;input <b> autofocus</b>&gt;</span> - можна вводити дані без натискання на полі, курсор встановлюється на
-			поле
-			<h4>Результат:</h4>
-			Результату не буде через переход відразу на цей тег при завантаженні сторінки <br><br>
-			<span>&lt;input <b>placeholder="Текст"</b>&gt;</span> - підказує на полі
-			<h4>Результат:</h4>
-			<input placeholder="Текст" type="text"> <br><br>
-			<span>&lt;input <b>required</b> &gt;</span> - обов'язкове поле
-			<h4>Результат:</h4>
-			<input required type="text"><br><br>
-			<span>&lt;input <b>value="Текст"</b>&gt;</span> - текст вже буде набраний у полі, також використовується для тексту
-			кнопки
-			<h4>Результат:</h4>
-			<input value="Текст" type="text"><br><br>
-			<span>&lt;input <b>readonly</b> &gt;</span> - не можна змінити, тільки прочитати
-			<h4>Результат:</h4>
-			<input value="Текст" readonly type="text"><br><br>
-			<span>&lt;input <b>type="button"</b>&gt;</span> - для кнопки
-			<h4>Результат:</h4>
-			<input type="button" value="Текст"><br><br>
-			<span>&lt;input <b>type="checkbox"</b>&gt;</span> - встановлює чекбокс
-			<h4>Результат:</h4>
-			<input type="checkbox"> Текст<br><br>
-			<span>&lt;input <b>type="file"</b>&gt;</span> - як поле вимагає файл
-			<h4>Результат:</h4>
-			<input type="file"><br><br>
-			<span>&lt;input <b>type="image"</b> &gt;</span> - в качестве кнопки для отправки использует картинку
-			<h4>Результат:</h4>
-			<input width="100px" type="image" src="./kot.jpg"><br><br>
-			<span>&lt;input <b>type="password"</b> &gt;</span> - використовується для паролів
-			<h4>Результат:</h4>
-			<input type="password"><br><br>
-			<span>&lt;input <b>type="radio"</b>&gt;</span> - для вибору з елементів
-			<h4>Результат:</h4>
-			<input type="radio"> Текст<br><br>
-			<span>&lt;input <b>type="reset"</b>&gt;</span> - скидання форми
-			<h4>Результат:</h4>
-			<input type="reset"><br><br>
-			<span>&lt;input <b>type="sumbit"</b>&gt;</span> - для відправки форми
-			<h4>Результат:</h4>
-			<input type="submit"><br><br>
-			<span>&lt;input <b>type="text"</b>&gt;</span> - для введення будь-якого тексту
-			<h4>Результат:</h4>
-			<input type="text"><br><br>
-			<span>&lt;input <b>type="color"</b> &gt;</span> - для вибору кольору
-			<h4>Результат:</h4>
-			<input type="color"><br><br>
-			<span>&lt;input <b>type="date"</b>&gt;</span> - для вибору дати
-			<h4>Результат:</h4>
-			<input type="date"><br><br>
-			<span>&lt;input <b>type="datetime-local"</b>&gt;</span> - для вибору дати та часу
-			<h4>Результат:</h4>
-			<input type="datetime-local"><br><br>
-			<span>&lt;input <b>type="email"</b>&gt;</span> - для пошти
-			<h4>Результат:</h4>
-			<input type="email"><br><br>
-			<span>&lt;input <b>type="number"</b>&gt;</span> - для чисел
-			<h4>Результат:</h4>
-			<input type="number"><br><br>
-			<span>&lt;input <b>type="range" min="1" max="10" step="1"</b>&gt;</span> - для вибору чисел від, до і якого
-			кратне
-			<h4>Результат:</h4>
-			<input type="range" min="1" max="10" step="1"><br><br>
-			<span>&lt;input <b>type="search"</b>&gt;</span> - для пошука
-			<h4>Результат:</h4>
-			<input type="search"><br><br>
-			<span>&lt;input <b>type="tel"</b>&gt;</span> - для номера телефона
-			<h4>Результат:</h4>
-			<input type="tel"><br><br>
-			<span>&lt;input <b>type="time"</b>&gt;</span> - для часу
-			<h4>Результат:</h4>
-			<input type="time"><br><br>
-			<span>&lt;input <b>type="url"</b>&gt;</span> - для посилань
-			<h4>Результат:</h4>
-			<input type="url"><br><br>
-			<span>&lt;input <b>type="month"</b>&gt;</span> - для місяця
-			<h4>Результат:</h4>
-			<input type="month"><br><br>
-			<span>&lt;input <b>type="week"</b>&gt;</span> - для неділі
-			<h4>Результат:</h4>
-			<input type="week"><br><br>
-			<span>&lt;input type="text" <b> list="k"&gt;&lt;datalist id="k"&gt;&lt;option
-					value="Текст"&gt;&lt;/option&gt;&lt;/datalist&gt;</b></span> - дозволяє вибрати зі списку
-			<h4>Результат:</h4>
-			<input type="text" list="k"><datalist id="k">
-				<option value="Текст"></option>
-			</datalist>
-		</fieldset>
-	</form>
-	<h2>&lt;footer&gt;</h2>
-	<span>&lt;footer&gt;...&lt;/footer&gt;</span> - використовується для розмітки та угруповання елементів у самому кінці сайту,
-	не обов'язковий
-	<h2 id="h">&lt;h1-6&gt;</h2>
-	<span>&lt;h1&gt;Текст&lt;/h1&gt;</span> - використовується для заголовка, чим менше число, тим менше текст
-	<h4>Результат:</h4>
-	<h1>Текст</h1> - h1
-	<h3>Текст</h3> - h3
-	<h2>&lt;header&gt;</h2>
-	<span>&lt;header&gt;...&lt;/header&gt;</span> - для угруповання елементів шапки сайту
-	<h2>&lt;hr&gt;</h2>
-	<span>&lt;hr&gt;</span> - створює лінію
-	<h4>Результат:</h4>
-	<hr>
-	<h2 id="i">&lt;i&gt;</h2>
-	<span>&lt;i&gt;Текст&lt;/i&gt;</span> - робить текст курсивом
-	<h4>Результат:</h4>
-	<i>Текст</i>
-	<h2>&lt;iframe&gt;</h2>
-	<span>&lt;iframe src=""&gt;...&lt;iframe&gt;</span> - створює вікно з кадром та посиланням на кадр
-	<h4>Результат:</h4>
-	<iframe width="504" height="500" id="gmap_canvas"
-		src="https://maps.google.com/maps?q=cherkassy&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"
-		marginheight="0" marginwidth="0"></iframe>
-	<h2>&lt;img&gt;</h2>
-	<span>&lt;img src="" alt=""&gt;</span> - додає картинку на сайт за посиланням та опис картинки, яке буде
-	відображатися, якщо зображення не завантажилося
-	<img src="kot.jpg" alt="Кот">
-	<h2 id="l">&lt;label&gt;</h2>
-	<span>&lt;label for=""&gt;Текст&lt;/label&gt;</span> - потрібний щоб зв'язати текст із полем, для цього полю дають id та його
-	записують у for
-	<h4>Результат:</h4>
-	<label for="ga">Текст </label><input id="ga" type="text">
-	<h2>&lt;link&gt;</h2>
-	<span>&lt;link href=""&gt;</span> - у head, потрібен для підключення файлів або посилань, наприклад шрифт та стилізація у css
-	<h2 id="n">&lt;nav&gt;</h2>
-	<span>&lt;nav&gt;...&lt;/nav&gt;</span> - всередині розміщуються посилання для навігації по сторінці
-	<h2 id="o">&lt;ol&gt;</h2>
-	<span>&lt;ol&gt;&lt;li&gt;&lt;/li&gt;&lt;/ol&gt;</span> - створює нумерований список та пункти до нього
-	<h4>Результат:</h4>
-	<ol>
-		<li>Текст</li>
-		<li>Текст</li>
-	</ol>
-	<h2 id="p">&lt;p&gt;</h2>
-	<span>&lt;p&gt;Текст&lt;p&gt;</span> - використовується для абзаців, об'єднати текст у 1 тег
-	<h2>&lt;pre&gt;</h2>
-	<span>&lt;pre&gt;Текст&lt;/pre&gt;</span> - відображає текст з усіма пробілами та переносами без тега br
-	<h2>&lt;progress&gt;</h2>
-	<span>&lt;progress value="" max=""&gt;&lt;/progress&gt;</span> - створює прогресбар, його поточне значення та його
-	максимальне значення
-	<h4>Результат:</h4>
-	<progress value="30" max="100">Ти бот, у тебе не підтримується цей тег, тут 30%</progress>
-	<h2 id="q">&lt;q&gt;</h2>
-	<span>&lt;q&gt;Текст&lt;/q&gt;</span> - для цитат
-	<h4>Результат:</h4>
-	<q>Текст</q>
-	<h2 id="s">&lt;script&gt;</h2>
-	<span>&lt;script src=""&gt;...&lt;/script&gt;</span> - вставляє JS файл, без src у цьому тегу можна писати код на JS
-	<h2>&lt;select&gt;</h2>
-	<span>&lt;select&gt;&lt;option&gt;&lt;/option&gt;&lt;/select&gt;</span> - дозволяє вибрати значення зі списку, де
-	option пункт списку
-	<h4>Результат:</h4>
-	<select name="" id="">
-		<option value="">Виберіть негра</option>
-		<option value="">Чорний</option>
-	</select>
-	<h2>&lt;span&gt;</h2>
-	<span>&lt;span&gt;Текст&lt;/span&gt;</span> - використовується для виділення рядкового елемента, який потрібно
-	виділити/стилізувати
-	<h2 id="t">&lt;table&gt;</h2>
-	<span>&lt;table&gt;...&lt;/table&gt;</span> - створює таблицю
-	<h3>&lt;tr&gt;</h3>
-	<span>&lt;tr&gt;...&lt;/tr&gt;</span> - створює рядок для таблиці
-	<h3>&lt;td&gt;</h3>
-	<span>&lt;td&gt;...&lt;/td&gt;</span> - створює комірку для таблиці, записується в тег tr
-	<h4>Результат:</h4>
-	<table border="1px">
-		<tr>
-			<td>Текст</td>
-		</tr>
-	</table>
-	<h3>&lt;th&gt;</h3>
-	<span>&lt;th&gt;...&lt;/th&gt;</span> - використовується для заголовків у таблиці, записується в тезі tr
-	<h4>Результат:</h4>
-	<table border="1px">
-		<tr>
-			<th>Текст</th>
-		</tr>
-	</table>
-	<h2>&lt;title&gt;</h2>
-	<span>&lt;title&gt;Текст&lt;/title&gt;</span> - відображає текст у вкладці, тег записується в head
-	<h2 id="u">&lt;ul&gt;</h2>
-	<span>&lt;ul&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ul&gt;</span> - маркований список
-	<h4>Результат:</h4>
-	<ul>
-		<li>Текст</li>
-	</ul>
-	<h2 id="v">&lt;video&gt;</h2>
-	<span>&lt;video&gt;&lt;/video&gt;</span> - атрибут для вставки відео, атрибути такі ж як у тега
-	<h4>Результат:</h4>
-	<video controls src="../video.mp4"></video>
+			<fieldset>
+				<br>
+				<legend>
+					<h3>&lt;textarea&gt;</h3>
+				</legend>
+				<span>&lt;textarea&gt;&lt;/textarea&gt;</span> -поле для великої кількості тексту з можливістю переносити
+				рядки
+				<h4>Результат:</h4>
+				<textarea></textarea>
+				<h3>&lt;input&gt;</h3>
+				<span>&lt;form action=""&gt;&lt;input type="text"&gt;&lt;/form&gt;</span> - створює поле для введення інформації
+				в
+				форму<br>
+				<span>&lt;input <b>autocomplete="on"</b> &gt;</span> - включає автозаповнення
+				<h4>Результат:</h4>
+				<input autocomplete="on" type="text"> <br><br>
+				<span>&lt;input <b> autofocus</b>&gt;</span> - можна вводити дані без натискання на полі, курсор встановлюється
+				на
+				поле
+				<h4>Результат:</h4>
+				Результату не буде через переход відразу на цей тег при завантаженні сторінки <br><br>
+				<span>&lt;input <b>placeholder="Текст"</b>&gt;</span> - підказує на полі
+				<h4>Результат:</h4>
+				<input placeholder="Текст" type="text"> <br><br>
+				<span>&lt;input <b>required</b> &gt;</span> - обов'язкове поле
+				<h4>Результат:</h4>
+				<input required type="text"><br><br>
+				<span>&lt;input <b>value="Текст"</b>&gt;</span> - текст вже буде набраний у полі, також використовується для
+				тексту
+				кнопки
+				<h4>Результат:</h4>
+				<input value="Текст" type="text"><br><br>
+				<span>&lt;input <b>readonly</b> &gt;</span> - не можна змінити, тільки прочитати
+				<h4>Результат:</h4>
+				<input value="Текст" readonly type="text"><br><br>
+				<span>&lt;input <b>type="button"</b>&gt;</span> - для кнопки
+				<h4>Результат:</h4>
+				<input type="button" value="Текст"><br><br>
+				<span>&lt;input <b>type="checkbox"</b>&gt;</span> - встановлює чекбокс
+				<h4>Результат:</h4>
+				<input type="checkbox"> Текст<br><br>
+				<span>&lt;input <b>type="file"</b>&gt;</span> - як поле вимагає файл
+				<h4>Результат:</h4>
+				<input type="file"><br><br>
+				<span>&lt;input <b>type="image"</b> &gt;</span> - в качестве кнопки для отправки использует картинку
+				<h4>Результат:</h4>
+				<input width="100px" type="image" src="./kot.jpg"><br><br>
+				<span>&lt;input <b>type="password"</b> &gt;</span> - використовується для паролів
+				<h4>Результат:</h4>
+				<input type="password"><br><br>
+				<span>&lt;input <b>type="radio"</b>&gt;</span> - для вибору з елементів
+				<h4>Результат:</h4>
+				<input type="radio"> Текст<br><br>
+				<span>&lt;input <b>type="reset"</b>&gt;</span> - скидання форми
+				<h4>Результат:</h4>
+				<input type="reset"><br><br>
+				<span>&lt;input <b>type="sumbit"</b>&gt;</span> - для відправки форми
+				<h4>Результат:</h4>
+				<input type="submit"><br><br>
+				<span>&lt;input <b>type="text"</b>&gt;</span> - для введення будь-якого тексту
+				<h4>Результат:</h4>
+				<input type="text"><br><br>
+				<span>&lt;input <b>type="color"</b> &gt;</span> - для вибору кольору
+				<h4>Результат:</h4>
+				<input type="color"><br><br>
+				<span>&lt;input <b>type="date"</b>&gt;</span> - для вибору дати
+				<h4>Результат:</h4>
+				<input type="date"><br><br>
+				<span>&lt;input <b>type="datetime-local"</b>&gt;</span> - для вибору дати та часу
+				<h4>Результат:</h4>
+				<input type="datetime-local"><br><br>
+				<span>&lt;input <b>type="email"</b>&gt;</span> - для пошти
+				<h4>Результат:</h4>
+				<input type="email"><br><br>
+				<span>&lt;input <b>type="number"</b>&gt;</span> - для чисел
+				<h4>Результат:</h4>
+				<input type="number"><br><br>
+				<span>&lt;input <b>type="range" min="1" max="10" step="1"</b>&gt;</span> - для вибору чисел від, до і якого
+				кратне
+				<h4>Результат:</h4>
+				<input type="range" min="1" max="10" step="1"><br><br>
+				<span>&lt;input <b>type="search"</b>&gt;</span> - для пошука
+				<h4>Результат:</h4>
+				<input type="search"><br><br>
+				<span>&lt;input <b>type="tel"</b>&gt;</span> - для номера телефона
+				<h4>Результат:</h4>
+				<input type="tel"><br><br>
+				<span>&lt;input <b>type="time"</b>&gt;</span> - для часу
+				<h4>Результат:</h4>
+				<input type="time"><br><br>
+				<span>&lt;input <b>type="url"</b>&gt;</span> - для посилань
+				<h4>Результат:</h4>
+				<input type="url"><br><br>
+				<span>&lt;input <b>type="month"</b>&gt;</span> - для місяця
+				<h4>Результат:</h4>
+				<input type="month"><br><br>
+				<span>&lt;input <b>type="week"</b>&gt;</span> - для неділі
+				<h4>Результат:</h4>
+				<input type="week"><br><br>
+				<span>&lt;input type="text" <b> list="k"&gt;&lt;datalist id="k"&gt;&lt;option
+						value="Текст"&gt;&lt;/option&gt;&lt;/datalist&gt;</b></span> - дозволяє вибрати зі списку
+				<h4>Результат:</h4>
+				<input type="text" list="k"><datalist id="k">
+					<option value="Текст"></option>
+				</datalist>
+			</fieldset>
+		</form>
+	</div>
+	<div class="f__footer">
+		<h2>&lt;footer&gt;</h2>
+		<span>&lt;footer&gt;...&lt;/footer&gt;</span> - використовується для розмітки та угруповання елементів у самому
+		кінці сайту,
+		не обов'язковий
+	</div>
+	<div class="h__h1-6">
+		<h2 id="h">&lt;h1-6&gt;</h2>
+		<span>&lt;h1&gt;Текст&lt;/h1&gt;</span> - використовується для заголовка, чим менше число, тим менше текст
+		<h4>Результат:</h4>
+		<h1>Текст - h1</h1>
+		<h3>Текст - h3</h3>
+	</div>
+	<div class="h__header">
+		<h2>&lt;header&gt;</h2>
+		<span>&lt;header&gt;...&lt;/header&gt;</span> - для угруповання елементів шапки сайту
+	</div>
+	<div class="h__hr">
+		<h2>&lt;hr&gt;</h2>
+		<span>&lt;hr&gt;</span> - створює лінію
+		<h4>Результат:</h4>
+		<hr>
+	</div>
+	<div class="i__i">
+		<h2 id="i">&lt;i&gt;</h2>
+		<span>&lt;i&gt;Текст&lt;/i&gt;</span> - робить текст курсивом
+		<h4>Результат:</h4>
+		<i>Текст</i>
+	</div>
+	<div class="i__iframe">
+		<h2>&lt;iframe&gt;</h2>
+		<span>&lt;iframe src=""&gt;...&lt;iframe&gt;</span> - створює вікно з кадром та посиланням на кадр
+		<h4>Результат:</h4>
+		<iframe width="504" height="500" id="gmap_canvas"
+			src="https://maps.google.com/maps?q=cherkassy&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"
+			marginheight="0" marginwidth="0"></iframe>
+	</div>
+	<div class="i__img">
+		<h2>&lt;img&gt;</h2>
+		<span>&lt;img src="" alt=""&gt;</span> - додає картинку на сайт за посиланням та опис картинки, яке буде
+		відображатися, якщо зображення не завантажилося
+		<img src="kot.jpg" alt="Кот">
+	</div>
+	<div class="l__label">
+		<h2 id="l">&lt;label&gt;</h2>
+		<span>&lt;label for=""&gt;Текст&lt;/label&gt;</span> - потрібний щоб зв'язати текст із полем, для цього полю дають
+		id та його
+		записують у for
+		<h4>Результат:</h4>
+		<label for="ga">Текст </label><input id="ga" type="text">
+	</div>
+	<div class="l__link">
+		<h2>&lt;link&gt;</h2>
+		<span>&lt;link href=""&gt;</span> - у head, потрібен для підключення файлів або посилань, наприклад шрифт та
+		стилізація у css, сторонні застосунки та сервери
+	</div>
+	<div class="n__nav">
+		<h2 id="n">&lt;nav&gt;</h2>
+		<span>&lt;nav&gt;...&lt;/nav&gt;</span> - всередині розміщуються посилання для навігації по сторінці
+	</div>
+	<div class="o__ol-li">
+		<h2 id="o">&lt;ol&gt;</h2>
+		<span>&lt;ol&gt;&lt;li&gt;&lt;/li&gt;&lt;/ol&gt;</span> - створює нумерований список та пункти до нього
+		<h4>Результат:</h4>
+		<ol>
+			<li>Текст</li>
+			<li>Текст</li>
+		</ol>
+	</div>
+	<div class="p__p">
+		<h2 id="p">&lt;p&gt;</h2>
+		<span>&lt;p&gt;Текст&lt;p&gt;</span> - використовується для абзаців, об'єднати текст у 1 тег
+	</div>
+	<div class="p__pre">
+		<h2>&lt;pre&gt;</h2>
+		<span>&lt;pre&gt;Текст&lt;/pre&gt;</span> - відображає текст з усіма пробілами та переносами без тега br
+	</div>
+	<div class="p__progress">
+		<h2>&lt;progress&gt;</h2>
+		<span>&lt;progress value="" max=""&gt;&lt;/progress&gt;</span> - створює прогресбар, його поточне значення та його
+		максимальне значення
+		<h4>Результат:</h4>
+		<progress value="30" max="100">Ти бот, у тебе не підтримується цей тег, тут 30%</progress>
+	</div>
+	<div class="q__q">
+		<h2 id="q">&lt;q&gt;</h2>
+		<span>&lt;q&gt;Текст&lt;/q&gt;</span> - для цитат
+		<h4>Результат:</h4>
+		<q>Текст</q>
+	</div>
+	<div class="s__script">
+		<h2 id="s">&lt;script&gt;</h2>
+		<span>&lt;script src=""&gt;...&lt;/script&gt;</span> - вставляє JS файл, без src у цьому тегу можна писати код на JS
+	</div>
+	<div class="s__select-option">
+		<h2>&lt;select&gt;</h2>
+		<span>&lt;select&gt;&lt;option&gt;&lt;/option&gt;&lt;/select&gt;</span> - дозволяє вибрати значення зі списку, де
+		option пункт списку
+		<h4>Результат:</h4>
+		<select name="" id="">
+			<option value="">Виберіть негра</option>
+			<option value="">Чорний</option>
+		</select>
+	</div>
+	<div class="s__span">
+		<h2>&lt;span&gt;</h2>
+		<span>&lt;span&gt;Текст&lt;/span&gt;</span> - використовується для виділення рядкового елемента, який потрібно
+		виділити/стилізувати
+	</div>
+	<div class="s__sub">
+		<h2>&lt;sub&gt;</h2>
+		<span>Н<b>&lt;sub&gt;2&lt;/sub&gt;</b>О</span> - текст зменшується та зміщується нижче, потрібен для створення нижніх індексів
+		<h4>Результат:</h4>
+		H<sub>2</sub>O
+	</div>
+	<div class="s__sup">
+		<h2>&lt;sup&gt;</h2>
+		<span>2 км<b>&lt;sup&gt;2&lt;/sup&gt;</b></span> - текст зменшується та зміщується вище, потрібен для степенів
+		<h4>Результат:</h4>
+		2 км<sup>2</sup>
+	</div>
+	<div class="t__table-tr-td-th">
+		<h2 id="t">&lt;table&gt;</h2>
+		<span>&lt;table&gt;...&lt;/table&gt;</span> - створює таблицю
+		<h3>&lt;tr&gt;</h3>
+		<span>&lt;tr&gt;...&lt;/tr&gt;</span> - створює рядок для таблиці
+		<h3>&lt;td&gt;</h3>
+		<span>&lt;td&gt;...&lt;/td&gt;</span> - створює комірку для таблиці, записується в тег tr
+		<h4>Результат:</h4>
+		<table border="1px">
+			<tr>
+				<td>Текст</td>
+			</tr>
+		</table>
+		<h3>&lt;th&gt;</h3>
+		<span>&lt;th&gt;...&lt;/th&gt;</span> - використовується для заголовків у таблиці, записується в тезі tr
+		<h4>Результат:</h4>
+		<table border="1px">
+			<tr>
+				<th>Текст</th>
+			</tr>
+		</table>
+	</div>
+	
+	<div class="t__title">
+		<h2>&lt;title&gt;</h2>
+		<span>&lt;title&gt;Текст&lt;/title&gt;</span> - відображає текст у вкладці, тег записується в head
+	</div>
+	<div class="u__ul-li">
+		<h2 id="u">&lt;ul&gt;</h2>
+		<span>&lt;ul&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ul&gt;</span> - маркований список
+		<h4>Результат:</h4>
+		<ul>
+			<li>Текст</li>
+		</ul>
+	</div>
+	<div class="v__video">
+		<h2 id="v">&lt;video&gt;</h2>
+		<span>&lt;video&gt;&lt;/video&gt;</span> - атрибут для вставки відео, атрибути такі ж як у тега
+		<h4>Результат:</h4>
+		<video controls src="../video.mp4"></video>
+	</div>
+
+
+	<script>
+		document.querySelector('#elastic').oninput = function () {
+			let val = this.value.trim();
+			let elasticItems = document.querySelectorAll('.elastic div');
+			if (val != '') {
+				elasticItems.forEach(function (elem) {
+					if (elem.innerText.search(val) == -1) {
+						elem.classList.add('hide');
+
+					}
+					else {
+						elem.classList.remove('hide');
+						let str = elem.innerText
+
+					}
+				});
+			}
+			else {
+				elasticItems.forEach(function (elem) {
+					elem.classList.remove('hide');
+				});
+			}
+		}
+
+	</script>
 </body>
 
 </html>
