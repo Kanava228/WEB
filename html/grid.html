@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="../css/grid.css" />
 </head>
 
-<body class="elastic">
+<body>
 	<input type="text" id="elastic">
 	<h1>Спочатку розберемо теги, які відповіли за розміщення контенту на сторінці</h1>
 	<div class="a__align-content">
@@ -196,31 +196,112 @@
 		<h4>Результат:</h4>
 		<div class="padding">ABC</div>
 	</div>
-	<script>
-		document.querySelector('#elastic').oninput = function () {
-			let val = this.value.trim();
-			let elasticItems = document.querySelectorAll('.elastic div');
-			if (val != '') {
-				elasticItems.forEach(function (elem) {
-					if (elem.innerText.search(val) == -1) {
-						elem.classList.add('hide');
+	<div class="flexbox">
+		<h1 style="text-align: center;">CSS Flexbox</h1>
+		<div class="display-flex">
+			<h2>display</h2>
+			<span>display: <b>flex</b></span> - застосовується для контейнера flex-елменетів, всі вкладені елементи стають
+			flex-елементами та всі блоки розміщуються в ряд. контейнер займає всю ширину екрану. якщо не задавати розміри
+			flex-елементам, то ширина буде підлаштовуватися під контент, а висота займати 100% flex-контейнера <br>
+			<span>display: <b>inline-flex</b></span> - все те саме, але ширина контейнеру підлаштовується під вміст
+			<h4>Результат:</h4>
+			<b>display: block (за замовчуванням)</b><br><br>
+			<div class="flex-container">
+				<div class="flex-item item-1">1</div>
+				<div class="flex-item item-2">2</div>
+				<div class="flex-item item-3">3</div>
+				<div class="flex-item item-4">4</div>
+				<div class="flex-item item-5">5</div>
+				<div class="flex-item item-6">6</div>
+				<div class="flex-item item-7">7</div>
+				<div class="flex-item item-8">8</div>
+			</div><br>
+			<b>display: flex</b><br><br>
+			<div class="flex-container1">
+				<div class="flex-item item-1">1</div>
+				<div class="flex-item item-2">2</div>
+				<div class="flex-item item-3">3</div>
+				<div class="flex-item item-4">4</div>
+				<div class="flex-item item-5">5</div>
+				<div class="flex-item item-6">6</div>
+				<div class="flex-item item-7">7</div>
+				<div class="flex-item item-8">8</div>
+			</div><br>
+			<b>display: inline-flex</b> <br><br>
+			<div class="flex-container2">
+				<div class="flex-item item-1">1</div>
+				<div class="flex-item item-2">2</div>
+				<div class="flex-item item-3">3</div>
+				<div class="flex-item item-4">4</div>
+				<div class="flex-item item-5">5</div>
+				<div class="flex-item item-6">6</div>
+				<div class="flex-item item-7">7</div>
+				<div class="flex-item item-8">8</div>
+			</div>
+		</div>
+		<div class="flex-direction">
+			<h2>flex-direction</h2>
+			<span>flex-direction: <b>row</b></span> - (за замовчуванням) змінює напрямок осей. головна вісь - напрямок зліва на
+			право, другорядна - зверху вниз
+			<h4>Результат:</h4>
 
-					}
-					else {
-						elem.classList.remove('hide');
-						let str = elem.innerText
+			<div class="flex-container1">
+				<div class="flex-item item-1">1</div>
+				<div class="flex-item item-2">2</div>
+				<div class="flex-item item-3">3</div>
+				<div class="flex-item item-4">4</div>
+				<div class="flex-item item-5">5</div>
+				<div class="flex-item item-6">6</div>
+				<div class="flex-item item-7">7</div>
+				<div class="flex-item item-8">8</div>
+				<img id="f-d-row" src="../img/f-d-row.png" alt=".">
+			</div><br>
+			<span>flex-direction: <b>row-reverse</b></span> - головна вісь змінює напрямок на: з права на ліво
+			<h4>Результат:</h4>
 
-					}
-				});
-			}
-			else {
-				elasticItems.forEach(function (elem) {
-					elem.classList.remove('hide');
-				});
-			}
-		}
+			<div class="flex-container3">
+				<div class="flex-item item-1">1</div>
+				<div class="flex-item item-2">2</div>
+				<div class="flex-item item-3">3</div>
+				<div class="flex-item item-4">4</div>
+				<div class="flex-item item-5">5</div>
+				<div class="flex-item item-6">6</div>
+				<div class="flex-item item-7">7</div>
+				<div class="flex-item item-8">8</div>
+				<img id="f-d-row-reverse" src="../img/f-d-row-reverse.png" alt=".">
+			</div><br>
+			<span>flex-direction: <b>column</b></span> - змінює місцями головну та другорядну вісі
+			<h4>Результат:</h4>
 
-	</script>
+			<div class="flex-container4">
+				<div class="flex-item item-1">1</div>
+				<div class="flex-item item-2">2</div>
+				<div class="flex-item item-3">3</div>
+				<div class="flex-item item-4">4</div>
+				<div class="flex-item item-5">5</div>
+				<div class="flex-item item-6">6</div>
+				<div class="flex-item item-7">7</div>
+				<div class="flex-item item-8">8</div>
+				<img id="f-d-column" src="../img/f-d-column.png" alt=".">
+			</div><br>
+			<span>flex-direction: <b>column-reverse</b></span> - змінює місцями головну та другорядну вісі, головна вісь знизу вверх
+			<h4>Результат:</h4>
+
+			<div class="flex-container5">
+				<div class="flex-item item-1">1</div>
+				<div class="flex-item item-2">2</div>
+				<div class="flex-item item-3">3</div>
+				<div class="flex-item item-4">4</div>
+				<div class="flex-item item-5">5</div>
+				<div class="flex-item item-6">6</div>
+				<div class="flex-item item-7">7</div>
+				<div class="flex-item item-8">8</div>
+				<img id="f-d-column" src="../img/f-d-column-reverse.png" alt=".">
+			</div><br>
+		</div>
+	</div>
+
+
 </body>
 
 </html>
